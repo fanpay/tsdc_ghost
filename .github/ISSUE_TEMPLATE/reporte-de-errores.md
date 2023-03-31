@@ -7,10 +7,10 @@ assignees: ''
 
 ---
 
-**Describe el error**
+**Descripción del error**
 Una clara y concisa descripción en la que consiste el error.
 
-**Para reproducir**
+**Cómo reproducir el error**
 Pasos para reproducir el error:
 1. Go to '...'
 2. Click on '....'
