@@ -1,7 +1,7 @@
 ---
 name: Reporte de errores
 about: Crea un reporte que ayuda a mejorar el sistema
-title: "[BUG - XYZ] - "
+title: "[BUG-XYZ] - "
 labels: bug
 assignees: ''
 
