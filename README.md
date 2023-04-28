@@ -13,3 +13,4 @@ Repositorio creado para reportar incidencias del proyecto GHOST para The Softwar
 
 * Johana Constanza Ojeda Ávila - 202317664
 * Fabián Andrés Payan Meneses - 202314733
+* Esneider Velandia Gonzalez - 201215364
