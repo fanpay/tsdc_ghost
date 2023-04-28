@@ -8,6 +8,9 @@ Repositorio creado para reportar incidencias del proyecto GHOST para The Softwar
 
 * https://ghost.org/docs/install/
 
+## Wiki
+
+Visita nuestra wiki [aquí](https://github.com/fanpay/tsdc_ghost/wiki/Resultados-de-pruebas-autom%C3%A1ticas)
 
 ## Colaboradores
 
