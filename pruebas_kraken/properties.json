@@ -22,5 +22,19 @@
     "BTN_CONFIRM_DELETE": "(//button[@class='gh-btn gh-btn-red gh-btn-icon ember-view'])[1]",
     "TITLE_FIRST_PUBLISHED_POST": "(//h3[@class='gh-content-entry-title'])[1]",
     "STATUS_FIRST_DRAFT_POST": "(//span[contains(@class, 'gh-content-status-draft')])[1]",
-    "DRAFT_TEXT": "DRAFT"
+    "DRAFT_TEXT": "DRAFT",
+    "ACTIVE_USERS_TITLE_STAFF": "(//section[contains(@class, 'gh-active-users')]//span)[1]",
+    "ACTIVE_USERS_TEXT_STAFF": "ACTIVE USERS",
+    "ACTIVE_USER_OWNER_STAFF": "(//section[contains(@class, 'gh-active-users')]//div//div//a//article//div[contains(@class,'apps-card-right')])[1]",
+    "ACTIVE_USER_OWNER_TITLE_STAFF": "OWNER",
+    "OLD_PASSWORD_INPUT_STAFF": "input[id='user-password-old']",
+    "NEW_PASSWORD_INPUT_STAFF": "input[id='user-password-new']",
+    "NEW_PASSWORD_VERIFICATION_INPUT_STAFF": "input[id='user-new-password-verification']",
+    "NEW_PASSWORD": "New123456789.",
+    "CHANGE_PASSWORD_BUTTON": "(//button[contains(@class, 'button-change-password')])[1]",
+    "NAV_BOTTOM": "(//div[contains(@class, 'gh-nav-bottom')])[1]",
+    "MENU_SIGNOUT": "(//a[contains(@class, 'user-menu-signout')])[1]",
+    "HEADER_TITLE_POST_SECTION": "(//header[contains(@class,'gh-canvas-header post-header')]//h2)[1]",
+    "HEADER_TITLE_TEXT_POST_SECTION": "Posts",
+    "NOTIFICATION_CLOSE_POPUP": ".gh-notification-close"
   }
