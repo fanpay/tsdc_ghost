@@ -1,0 +1,26 @@
+{
+    "USERNAME_EID": "input[name='identification']",
+    "USERNAME": "f.payan@uniandes.edu.co",
+    "PASSWORD_EID": "input[name='password']",
+    "PASSWORD": "Testing123456789.",
+    "BTN_SIGNIN_EID": "(//button[@class='login gh-btn gh-btn-blue gh-btn-block gh-btn-icon ember-view'])[1]",
+    "MOCK_TITLE_POST_1": "POST con Texto",
+    "MOCK_CONTENT_POST_1": "Hey post has sido creado",
+
+    "SETTINGS_BUTTON_PUBLICATION_ECLASS": "(//button[@class='post-settings'])[1]",
+    "POST_TITLE_ECLASS": ".gh-editor-title",
+    "ADD_IMAGE_ECLASS": ".gh-editor-feature-image-unsplash",
+    "INSERT_IMAGE_ECLASS": ".gh-unsplash-photo-footer .gh-unsplash-button",
+    "CONTENT_ECLASS": ".koenig-editor__editor",
+    "PLUS_ADD_ECLASS": ".koenig-plus-menu-button",
+    "BTN_PUBLISH": ".gh-publishmenu-trigger",
+    "BTN_BLUE_PUBLISH": ".gh-publishmenu-button",
+    "LNK_POSTS": "http://localhost:2368/ghost/#/posts",
+    "LNK_BACK_POSTS": "(//a[@class='blue link fw4 flex items-center ember-view'])[1]",
+    "FIRST_POST_PUBLISHED": "(//span[@class='gh-content-status-published nowrap'])[1]",
+    "LNK_DELETE_POST": ".settings-menu-delete-button",
+    "BTN_CONFIRM_DELETE": "(//button[@class='gh-btn gh-btn-red gh-btn-icon ember-view'])[1]",
+    "TITLE_FIRST_PUBLISHED_POST": "(//h3[@class='gh-content-entry-title'])[1]",
+    "STATUS_FIRST_DRAFT_POST": "(//span[contains(@class, 'gh-content-status-draft')])[1]",
+    "DRAFT_TEXT": "DRAFT"
+  }
