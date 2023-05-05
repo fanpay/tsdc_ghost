@@ -15,3 +15,6 @@ node_modules
 
 # Ignorar archivos de reporte
 reports
+
+# Ignorar archivos de rastreo kraken
+.kraken
