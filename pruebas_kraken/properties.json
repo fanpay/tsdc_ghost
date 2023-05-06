@@ -77,5 +77,11 @@
     "EMAIL_FIELD_INVITE_STAFF": "input[name='email']",
     "EMAIL_VALUE_INVITE_STAFF": "testing@uniandes.edu.co",
     "FIRST_EMAIL_INVITE_STAFF": "(//article//div[contains(@class, 'apps-card-left')]//h3[contains(@class, 'apps-card-app-title')])[1]",
-    "FIRST_REVOKE_ACTION_INVITE_STAFF": "(//article//div[contains(@class, 'apps-card-right')]//a[contains(@class, 'red-hover')])[1]"
+    "FIRST_REVOKE_ACTION_INVITE_STAFF": "(//article//div[contains(@class, 'apps-card-right')]//a[contains(@class, 'red-hover')])[1]",
+    "OWNER_STATUS_LABEL_STAFF": "(//section[contains(@class,'gh-active-users')]//div[contains(@class, 'apps-card-right')]//div[contains(@class, 'apps-configured')])[1]",
+    "OWNER_STATUS_TEXT_STAFF": "OWNER",
+    "USERNAME_OWNER_FIELD_STAFF": "(//fieldset[@class='user-details-bottom']//input[@id='user-name'])",
+    "NEW_USERNAME_OWNER_TEXT_STAFF": "Andres Meneses", 
+    "OLD_USERNAME_OWNER_TEXT_STAFF": "Fabian Payan",
+    "USERNAME_NAV_BOTTOM": "(//div[contains(@class,'gh-nav-bottom')]//span[contains(@class,'gh-user-name')])[1]"
   }
