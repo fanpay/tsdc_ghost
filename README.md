@@ -112,6 +112,8 @@ Para ejecutar los escenarios mencionados anteriormente se debe seguir los siguie
 *NOTA*: Puede que al ejecutar tantas pruebas en paralelo, la versión de GHOST no soporte tantas conexiones tan seguidas y muestre el siguiente error: `Too many attempts try again in an hour`
 Para esto, puede modificar algunas variables de entorno de su instalación de GHOST. Este [post](https://forum.ghost.org/t/disable-too-many-attempts-try-again-in-an-hour/4087/2) puede ayudarle a solucionarlo. 
 
+Por favor leer también las [siguientes recomendaciones adicionales](https://github.com/fanpay/tsdc_ghost/blob/main/pruebas_kraken/README.md)
+
 [Enlace al proyecto Kraken](https://github.com/fanpay/tsdc_ghost/tree/main/pruebas_kraken)
 
 ## Colaboradores
