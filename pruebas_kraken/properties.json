@@ -95,5 +95,8 @@
     "BTN_DELETE_TAG": "(//button[contains(@class,'gh-btn-red')])[1]",
     "BTN_PRIVATE_SITE_SETTINGS": "(//label[contains(@for,'settings-private')])[1]",
     "PRIVATE_SITE_TITLE_HEADER": "(//section[contains(@class,'gh-flow-content')]//header)[1]",
-    "PRIVATE_SITE_TITLE_TEXT": "This site is private"
+    "PRIVATE_SITE_TITLE_TEXT": "This site is private",
+    "BTN_NIGHT_SHIFT_LABS": "(//label[contains(@for,'labs-nightShift')])[1]",
+    "HEADER_SECTION": "(//header[contains(@class,'gh-canvas-header')])[1]",
+    "NIGH_SHIFT_COLOR": "rgb(38, 50, 56)"
   }

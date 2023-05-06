@@ -31,17 +31,34 @@ Then('I should see the text {kraken-string} on plain element with xpath {kraken-
     assert.strictEqual(element_text, text);
 });
 
+
 Then('I should not see the text {kraken-string} on plain element with xpath {kraken-string}', async function(text, xpath) {
   let element = await this.driver.$(xpath);
   let element_text = await element.getText();
   assert.notEqual(element_text, text);
 });
 
+
 Then('I should see a partial text {kraken-string} on plain element with xpath {kraken-string}', async function(text, xpath) {
   let element = await this.driver.$(xpath);
   let element_text = await element.getText();
 
   assert.ok(element_text.includes(text), `Expected field value "${element_text}" to contain partial text "${text}"`);
+});
+
+
+Then('I should see the color {kraken-string} in element with xpath {kraken-string}', async function(color, xpath) {
+  let element = await this.driver.$(xpath);
+
+  let colorElement = await element.getCSSProperty("background")
+  let colorValue = colorElement.value
+
+  console.log("xpath : " + xpath);
+  console.log("color : " + color);
+  console.log("includes : " + colorElement.value);
+
+
+  assert.ok(colorValue.includes(color), `Expected field value "${colorValue}" to contain partial text "${color}"`);
 });
 
 
