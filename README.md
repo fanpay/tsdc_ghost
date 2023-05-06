@@ -12,6 +12,12 @@ Repositorio creado para reportar incidencias del proyecto GHOST para The Softwar
 
 Visita nuestra wiki [aquí](https://github.com/fanpay/tsdc_ghost/wiki/Resultados-de-pruebas-autom%C3%A1ticas)
 
+## Nuestro contenido:
+
+* [Resultados de pruebas automaticas usando Monkeys y Rippers](https://github.com/fanpay/tsdc_ghost/wiki/Resultados-de-pruebas-autom%C3%A1ticas)
+* [Pros y contras de herramientas usadas para pruebas E2E](https://github.com/fanpay/tsdc_ghost/wiki/Cypress-Vs-Kraken)
+
+
 ## Listado de 5 funcionalidades bajo pruebas
 
 ### 1.	Crear publicaciones
@@ -34,15 +40,15 @@ Si hasta ahora se encuentra realizando sus primeros pasos en su sitio o no tiene
 
 ## Listado de 21 escenarios de pruebas
 
-| Id | Descripcion | Responsable |
-|:--:|:-----------:|:------------:|
-|E3| Crear una publicación, determinar una fecha diferente al día de la creación para su publicación y validar que fue programada la publicación. | Esneider Velandia |
-|E6| Ir a la sección “Staff” invitar a un usuario, asignar un rol y posteriormente remover la invitación. | Esneider Velandia |
-|E9| Hacer inicio de sesión, ir al apartado de staff, cambiar el nombre del usuario autenticado, cerrar sesión, iniciar sesión nuevamente y verificar en la pantalla principal que el nombre cambie satisfactoriamente. | Esneider Velandia |
-|E12| Crear una página y publicarla en el mismo momento, visualizarla en la lista, eliminarla y comprobar que no aparece en la lista de páginas. | Esneider Velandia |
-|E15| Crear una etiqueta, crear un post con la etiqueta creada y publicar el post. El post es publicado con la etiqueta creada. | Esneider Velandia |
-|E18| Ir a la sección “General”, seleccionar la opción de “Make this site private” para hacer privado el sitio y luego nuevamente dejarlo publico.  | Esneider Velandia |
-|E21| En la sección “Labs” ubicada en General, cambiar la opción Night shift y verificar que en las secciones: Posts, Pages, Tags, Staf, General, Design, Code injection, Integrations y Labs el fondo corresponde al tema oscuro de GHost (rgb(38, 50, 56)) | Esneider Velandia |
+| Id | Descripcion | Funcionalidad | Responsable |
+|:--:|:-----------:|:-------------:|:------------:|
+|E3| Como un usuario inicio sesión, creo una publicación, selecciono una fecha diferente al día de la creación para su publicación y la programo, al seleccionar esta opción se observa un mensaje indicando que fue programada la publicación. | 1 |Esneider Velandia |
+|E6| Como un usuario inicio sesión, selecciono la sección “Staff”, invito a un usuario staff, le asigo un rol _Author_ y posteriormente remuevo la invitación. | 2 |Esneider Velandia |
+|E9| Como un usuario inicio sesión, selecciono la sección “Staff”, cambio el nombre del usuario autenticado, cierro la sesión, inicio la sesión nuevamente y en la pantalla principal debe aparecer el nombre satisfactoriamente. | 2 |Esneider Velandia |
+|E12| Como un usuario inicio sesión, selecciono la opción _Pages_, creo una página y la publicó en el mismo momento, luego la visualizo en la lista de publicaciones, la selecciono para eliminarla y al regresar al listado no aparece en la lista de páginas. | 3 | Esneider Velandia |
+|E15| Como un usuario inicio sesión, creó una etiqueta posteriormente creó un post con la etiqueta creada y publicó inmediatamente el post. Finalmente el post es publicado con la etiqueta creada. | 4 | Esneider Velandia |
+|E18| Como un usuario inicio sesión, me dirijo a la sección “General”, seleccionó la opción nombrada como _“Make this site private”_ para hacer privado el sitio, verifico el token generado como clave, finalmente dejao publico nuevamente el sitio. | 5 | Esneider Velandia |
+|E21| Como un usuario inicio sesión, me dirijo a la sección “Labs” ubicada en General y la selecciono, ubico la opción _Night shift_ la selecciono para que cambie y me dirijo a las secciones: Posts, Pages, Tags, Staf, General, Design, Code injection, Integrations y Labs y observo que el fondo de cada sección corresponde al tema oscuro de GHost (rgb(38, 50, 56)) | 5 | Esneider Velandia |
 
 ## Colaboradores
 
