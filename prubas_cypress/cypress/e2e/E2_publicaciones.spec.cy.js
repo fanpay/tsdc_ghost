@@ -43,7 +43,7 @@ describe('Crear un nuevo post, publicarlo y eliminarlo.', () => {
     
     cy.get('.post-settings');
     cy.get('.gh-btn.gh-btn-hover-red.gh-btn-icon.settings-menu-delete-button').click();
-    cy.wait(2000);
+    cy.wait(1000);
     cy.get('.gh-btn.gh-btn-red.gh-btn-icon.ember-view').click();
     cy.wait(2000);
 
