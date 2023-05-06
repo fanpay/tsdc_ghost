@@ -83,5 +83,6 @@
     "USERNAME_OWNER_FIELD_STAFF": "(//fieldset[@class='user-details-bottom']//input[@id='user-name'])",
     "NEW_USERNAME_OWNER_TEXT_STAFF": "Andres Meneses", 
     "OLD_USERNAME_OWNER_TEXT_STAFF": "Fabian Payan",
-    "USERNAME_NAV_BOTTOM": "(//div[contains(@class,'gh-nav-bottom')]//span[contains(@class,'gh-user-name')])[1]"
+    "USERNAME_NAV_BOTTOM": "(//div[contains(@class,'gh-nav-bottom')]//span[contains(@class,'gh-user-name')])[1]",
+    "PAGE_CONTENT_LIST": "(//section[@class='content-list'])[1]"
   }
