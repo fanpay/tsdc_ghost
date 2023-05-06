@@ -42,6 +42,7 @@
     "FIRST_PAGE_PUBLISHED": "(//li[contains(@class,'gh-posts-list-item')])[1]",
     "STATUS_FIRST_PAGE_PUBLISHED": "(//li[contains(@class,'gh-posts-list-item')]//a[contains(@class,'gh-post-list-status')])[1]",
     "STATUS_TEXT_FIRST_PAGE_PUBLISHED": "PUBLISHED",
+    "STATUS_TEXT_FIRST_PAGE_SCHEDULED": "SCHEDULED",
     "TITLE_FIRST_PAGE_PUBLISHED": "(//li[contains(@class,'gh-posts-list-item')]//a[contains(@class,'gh-post-list-title')]//h3)[1]",
     "MOCK_TITLE_PAGE_1": "Page con Texto",
     "STATUS_TEXT_FIRST_PAGE_DRAFT": "DRAFT",
@@ -65,5 +66,10 @@
     "BTN_LEAVE_MODAL": "(//section[contains(@class, 'modal-content')]//button[contains(@class,'gh-btn-red')])[1]",
     "BTN_LEAVE_TEXT_MODAL": "Leave",
     "FIRST_NAV_OPTION_SITE": "(//nav[contains(@class, 'site-nav')]//li[contains(@class,'nav-current')])[1]",
-    "BLANK_SPACE": " "
+    "BLANK_SPACE": " ",
+    "PUBLISH_DATE_FIELD_POST_PUBLICATION": "(//div[contains(@class,'gh-date-time-picker-date')]//input)[1]",
+    "PUBLISH_DATE_VALUE_POST_PUBLICATION": "2023-12-08",
+    "PUBLISH_MENU_BUTTON": "(//footer//button[contains(@class,'gh-publishmenu-button')])[1]",
+    "PUBLISH_DATE_VALUE_HR_POST_PUBLICATION": "08 Dec 2023",
+    "SCHEDULED_DATETIME_VALUE_HR_POST_PUBLICATION" : "(//time[contains(@datetime,'Dec 08 2023')])[1]"
   }
