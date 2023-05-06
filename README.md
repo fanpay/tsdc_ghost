@@ -8,6 +8,10 @@ Repositorio creado para reportar incidencias del proyecto GHOST para The Softwar
 
 * https://ghost.org/docs/install/
 
+## Precondiciones
+
+* Tener instalado [NodeJS 12](https://nodejs.org/en/blog/release/v12.22.12)
+
 ## Wiki
 
 Visita nuestra wiki [aquí](https://github.com/fanpay/tsdc_ghost/wiki/Resultados-de-pruebas-autom%C3%A1ticas)
