@@ -1,6 +1,6 @@
 Feature: Crear borrador de una página en módulo Pages
 
-@user63 @web
+@user64 @web
 Scenario: Como un usuario inicio sesión, voy a la sección de "Pages", crearé una página que incluya un título y una descripción, la guardo como borrador, cerrar sesión, volver a iniciar sesión, ir a la sección de "Pages", verificar que la publicación creada tenga el estado de borrador o "draft"
 
     Given I login in ghost with my credentials with username "<USERNAME>" and password "<PASSWORD>"
