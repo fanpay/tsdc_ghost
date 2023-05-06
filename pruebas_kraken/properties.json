@@ -44,5 +44,16 @@
     "STATUS_TEXT_FIRST_PAGE_PUBLISHED": "PUBLISHED",
     "TITLE_FIRST_PAGE_PUBLISHED": "(//li[contains(@class,'gh-posts-list-item')]//a[contains(@class,'gh-post-list-title')]//h3)[1]",
     "MOCK_TITLE_PAGE_1": "Page con Texto",
-    "STATUS_TEXT_FIRST_PAGE_DRAFT": "DRAFT"
+    "STATUS_TEXT_FIRST_PAGE_DRAFT": "DRAFT",
+    "HEADER_TEXT_GENERAL_SECTION": "General settings",
+    "FIRST_PUBLICATION_INFO_OPTION_GENERAL_SECTION": "(//div[contains(@class,'gh-setting-first')]//button[contains(@class,'gh-btn')])[1]",
+    "TITLE_FIELD_PUBLICATION_INFO_GENERAL_SECTION": "(//div[contains(@class,'gh-setting-content-extended')]//input[contains(@class,'gh-input')])[1]",
+    "NEW_TITLE_TEXT_PUBLICATION_INFO_GENERAL_SECTION": "GHOST 3.4.1",
+    "OLD_TITLE_TEXT_PUBLICATION_INFO_GENERAL_SECTION": "GHOST",
+    "DESCRIPTION_FIELD_PUBLICATION_INFO_GENERAL_SECTION": "(//div[contains(@class,'gh-setting-content-extended')]//input[contains(@class,'gh-input')])[2]",
+    "NEW_DESCRIPTION_TEXT_PUBLICATION_INFO_GENERAL_SECTION": "Ideas, thoughts and stories",
+    "OLD_DESCRIPTION_TEXT_PUBLICATION_INFO_GENERAL_SECTION": "Thoughts, stories and ideas",
+    "BTN_SAVE_SETTINGS": "(//section[contains(@class, 'view-actions')]//button[contains(@class,'gh-btn-blue')])[1]",
+    "GENERAL_HEADER_TEXT_SITE": "(//header//div[contains(@class,'gh-nav-menu-details-blog')])[1]",
+    "GENERAL_DESCRIPTION_TEXT_SITE": "(//header[contains(@class,'site-home-header')]//h2[contains(@class,'site-description')])[1]"
   }
