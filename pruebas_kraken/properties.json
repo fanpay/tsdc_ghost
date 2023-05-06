@@ -92,5 +92,8 @@
     "MULTIPLE_OPTION_TAG_FIELD_POST": "(//div[@id='tag-input'])[1]",
     "SETTINGS_BUTTON": "(//button[@class='post-settings'])[1]",
     "CLOSE_SETTINGS_BUTTON": "(//div[@class='settings-menu-header']//button[contains(@class,'close')])[1]",
-    "BTN_DELETE_TAG": "(//button[contains(@class,'gh-btn-red')])[1]"
+    "BTN_DELETE_TAG": "(//button[contains(@class,'gh-btn-red')])[1]",
+    "BTN_PRIVATE_SITE_SETTINGS": "(//label[contains(@for,'settings-private')])[1]",
+    "PRIVATE_SITE_TITLE_HEADER": "(//section[contains(@class,'gh-flow-content')]//header)[1]",
+    "PRIVATE_SITE_TITLE_TEXT": "This site is private"
   }
