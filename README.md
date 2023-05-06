@@ -12,6 +12,12 @@ Repositorio creado para reportar incidencias del proyecto GHOST para The Softwar
 
 Visita nuestra wiki [aquí](https://github.com/fanpay/tsdc_ghost/wiki/Resultados-de-pruebas-autom%C3%A1ticas)
 
+## Nuestro contenido:
+
+* [Resultados de pruebas automaticas usando Monkeys y Rippers](https://github.com/fanpay/tsdc_ghost/wiki/Resultados-de-pruebas-autom%C3%A1ticas)
+* [Pros y contras de herramientas usadas para pruebas E2E](https://github.com/fanpay/tsdc_ghost/wiki/Cypress-Vs-Kraken)
+
+
 ## Listado de 5 funcionalidades bajo pruebas
 
 ### 1.	Crear publicaciones
