@@ -31,6 +31,12 @@ Then('I should see the text {kraken-string} on plain element with xpath {kraken-
     assert.strictEqual(element_text, text);
 });
 
+Then('I should not see the text {kraken-string} on plain element with xpath {kraken-string}', async function(text, xpath) {
+  let element = await this.driver.$(xpath);
+  let element_text = await element.getText();
+  assert.notEqual(element_text, text);
+});
+
 
 Then('The field with id {kraken-string} should not exist', async function (id) {
     let elements = await this.driver.$(selector);

@@ -55,5 +55,15 @@
     "OLD_DESCRIPTION_TEXT_PUBLICATION_INFO_GENERAL_SECTION": "Thoughts, stories and ideas",
     "BTN_SAVE_SETTINGS": "(//section[contains(@class, 'view-actions')]//button[contains(@class,'gh-btn-blue')])[1]",
     "GENERAL_HEADER_TEXT_SITE": "(//header//div[contains(@class,'gh-nav-menu-details-blog')])[1]",
-    "GENERAL_DESCRIPTION_TEXT_SITE": "(//header[contains(@class,'site-home-header')]//h2[contains(@class,'site-description')])[1]"
+    "GENERAL_DESCRIPTION_TEXT_SITE": "(//header[contains(@class,'site-home-header')]//h2[contains(@class,'site-description')])[1]",
+    "DESIGN_TEXT_GENERAL_SECTION": "Design",
+    "LABEL_FIRST_OPTION_NAVIGATION_DESIGN": "(//form[@id='settings-navigation']//div[contains(@class,'draggable-object')]//span//input)[1]",
+    "LABEL_ERROR_NAVIGATION_DESIGN": "(//form[@id='settings-navigation']//div[contains(@class,'draggable-object')]//span//p)[1]",
+    "LABEL_ERROR_TEXT_NAVIGATION_DESIGN": "You must specify a label",
+    "BTN_SAVE_ERROR_SETTINGS": "(//section[contains(@class, 'view-actions')]//button[contains(@class,'gh-btn-red')])[1]",
+    "BTN_SAVE_ERROR_TEXT_SETTINGS": "Retry",
+    "BTN_LEAVE_MODAL": "(//section[contains(@class, 'modal-content')]//button[contains(@class,'gh-btn-red')])[1]",
+    "BTN_LEAVE_TEXT_MODAL": "Leave",
+    "FIRST_NAV_OPTION_SITE": "(//nav[contains(@class, 'site-nav')]//li[contains(@class,'nav-current')])[1]",
+    "BLANK_SPACE": " "
   }
