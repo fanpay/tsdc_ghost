@@ -37,6 +37,13 @@ Then('I should not see the text {kraken-string} on plain element with xpath {kra
   assert.notEqual(element_text, text);
 });
 
+Then('I should see a partial text {kraken-string} on plain element with xpath {kraken-string}', async function(text, xpath) {
+  let element = await this.driver.$(xpath);
+  let element_text = await element.getText();
+
+  assert.ok(element_text.includes(text), `Expected field value "${element_text}" to contain partial text "${text}"`);
+});
+
 
 Then('The field with id {kraken-string} should not exist', async function (id) {
     let elements = await this.driver.$(selector);

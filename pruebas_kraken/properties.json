@@ -71,5 +71,11 @@
     "PUBLISH_DATE_VALUE_POST_PUBLICATION": "2023-12-08",
     "PUBLISH_MENU_BUTTON": "(//footer//button[contains(@class,'gh-publishmenu-button')])[1]",
     "PUBLISH_DATE_VALUE_HR_POST_PUBLICATION": "08 Dec 2023",
-    "SCHEDULED_DATETIME_VALUE_HR_POST_PUBLICATION" : "(//time[contains(@datetime,'Dec 08 2023')])[1]"
+    "SCHEDULED_DATETIME_VALUE_HR_POST_PUBLICATION" : "(//time[contains(@datetime,'Dec 08 2023')])[1]",
+    "GREEN_BUTTON_STAFF": "(//section//button[contains(@class,'gh-btn-green')])[1]",
+    "GREEN_BUTTON_MODAL_STAFF": "(//div[contains(@class,'modal-footer')]//button[contains(@class,'gh-btn-green')])[1]",
+    "EMAIL_FIELD_INVITE_STAFF": "input[name='email']",
+    "EMAIL_VALUE_INVITE_STAFF": "testing@uniandes.edu.co",
+    "FIRST_EMAIL_INVITE_STAFF": "(//article//div[contains(@class, 'apps-card-left')]//h3[contains(@class, 'apps-card-app-title')])[1]",
+    "FIRST_REVOKE_ACTION_INVITE_STAFF": "(//article//div[contains(@class, 'apps-card-right')]//a[contains(@class, 'red-hover')])[1]"
   }
