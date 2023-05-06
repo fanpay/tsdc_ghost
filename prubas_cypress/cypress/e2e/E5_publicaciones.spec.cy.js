@@ -23,7 +23,7 @@ describe('Crear un nuevo post y dejarlo en estado Draft y se visualiza en el lis
 
   })
 
-  it("Create a Post", () => {
+  it("Create a Post y dejarlo en estado Draft", () => {
 
     // When
     cy.get(".gh-nav-top").contains("Posts").click();
