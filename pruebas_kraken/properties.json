@@ -36,5 +36,13 @@
     "MENU_SIGNOUT": "(//a[contains(@class, 'user-menu-signout')])[1]",
     "HEADER_TITLE_POST_SECTION": "(//header[contains(@class,'gh-canvas-header post-header')]//h2)[1]",
     "HEADER_TITLE_TEXT_POST_SECTION": "Posts",
-    "NOTIFICATION_CLOSE_POPUP": ".gh-notification-close"
+    "NOTIFICATION_CLOSE_POPUP": ".gh-notification-close",
+    "HEADER_TITLE_PAGE_SECTION": "(//header//h2[contains(@class,'gh-canvas-title')])[1]",
+    "HEADER_TITLE_TEXT_PAGE_SECTION": "Pages",
+    "FIRST_PAGE_PUBLISHED": "(//li[contains(@class,'gh-posts-list-item')])[1]",
+    "STATUS_FIRST_PAGE_PUBLISHED": "(//li[contains(@class,'gh-posts-list-item')]//a[contains(@class,'gh-post-list-status')])[1]",
+    "STATUS_TEXT_FIRST_PAGE_PUBLISHED": "PUBLISHED",
+    "TITLE_FIRST_PAGE_PUBLISHED": "(//li[contains(@class,'gh-posts-list-item')]//a[contains(@class,'gh-post-list-title')]//h3)[1]",
+    "MOCK_TITLE_PAGE_1": "Page con Texto",
+    "STATUS_TEXT_FIRST_PAGE_DRAFT": "DRAFT"
   }
