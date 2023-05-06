@@ -84,5 +84,13 @@
     "NEW_USERNAME_OWNER_TEXT_STAFF": "Andres Meneses", 
     "OLD_USERNAME_OWNER_TEXT_STAFF": "Fabian Payan",
     "USERNAME_NAV_BOTTOM": "(//div[contains(@class,'gh-nav-bottom')]//span[contains(@class,'gh-user-name')])[1]",
-    "PAGE_CONTENT_LIST": "(//section[@class='content-list'])[1]"
+    "PAGE_CONTENT_LIST": "(//section[@class='content-list'])[1]",
+    "GREEN_BUTTON_TAGS": "(//section//a[contains(@class,'gh-btn-green')])[1]",
+    "INPUT_NAME_TAG": "input[name='name']",
+    "TEXT_NAME_TAG": "TEST TAG",
+    "INPUT_TAG_FIELD_POST": "(//div[@id='tag-input']//input)[1]",
+    "MULTIPLE_OPTION_TAG_FIELD_POST": "(//div[@id='tag-input'])[1]",
+    "SETTINGS_BUTTON": "(//button[@class='post-settings'])[1]",
+    "CLOSE_SETTINGS_BUTTON": "(//div[@class='settings-menu-header']//button[contains(@class,'close')])[1]",
+    "BTN_DELETE_TAG": "(//button[contains(@class,'gh-btn-red')])[1]"
   }
