@@ -50,6 +50,24 @@ Si hasta ahora se encuentra realizando sus primeros pasos en su sitio o no tiene
 |E18| Como un usuario inicio sesión, me dirijo a la sección “General”, seleccionó la opción nombrada como _“Make this site private”_ para hacer privado el sitio, verifico el token generado como clave, finalmente dejao publico nuevamente el sitio. | 5 | Esneider Velandia |
 |E21| Como un usuario inicio sesión, me dirijo a la sección “Labs” ubicada en General y la selecciono, ubico la opción _Night shift_ la selecciono para que cambie y me dirijo a las secciones: Posts, Pages, Tags, Staf, General, Design, Code injection, Integrations y Labs y observo que el fondo de cada sección corresponde al tema oscuro de GHost (rgb(38, 50, 56)) | 5 | Esneider Velandia |
 
+## Instrucciones para ejecutar los escenarios.
+
+### Cypres
+//TODO
+
+Para ejecutar los escenarios mencionados anteriormente se debe seguir los siguientes pasos:
+1. ...
+
+2. ...
+
+3. ....
+
+
+[link al proyecto Cypress](https://github.com/fanpay/tsdc_ghost/tree/main/prubas_cypress)
+
+### Kraken
+//TODO
+
 ## Colaboradores
 
 * Johana Constanza Ojeda Ávila - 202317664
