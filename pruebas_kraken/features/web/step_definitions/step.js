@@ -1,5 +1,4 @@
 const { Given, When, Then } = require('@cucumber/cucumber');
-const { until, Actions } = require('selenium-webdriver');
 const assert = require('assert');
 const GhostPage = require('./GhostPage');
 
