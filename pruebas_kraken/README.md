@@ -1,16 +1,26 @@
 # RECOMENDACIONES IMPORTANTES
 
-Se deben adaptar las nuevas credenciales dependiendo del usuario creado en la instalación de GHOST. Esto se hace en el archivo [properties](https://github.com/fanpay/tsdc_ghost/blob/main/pruebas_kraken/properties.json) y las variables a editar serían:
+Se deben adaptar las nuevas credenciales de autenticación dependiendo del usuario creado en la instalación de GHOST de su propia máquina. Esto se hace en el archivo [properties](https://github.com/fanpay/tsdc_ghost/blob/main/pruebas_kraken/properties.json) y las variables a editar serían:
 
     "USERNAME": "f.payan@uniandes.edu.co",
     "PASSWORD": "Testing123456789.",
-    
+
+*No olvide colocar las credenciales que usted usa en su instalación de Ghost.*    
+
+## Precondiciones
+
+* Tener instalado [NodeJS 12](https://nodejs.org/en/blog/release/v12.22.12) 
+* Tener instalado [Kraken](https://thesoftwaredesignlab.github.io/Kraken/)
+    - Sigue este tutorial para tener más idea sobre esta herramienta -> [Tutorial Kraken](https://thesoftwaredesignlab.github.io/AutTestingCodelabs/kraken-web-testing-tool/index.html#0)
+
 ### Kraken
 
 Para ejecutar los escenarios [mencionados anteriormente](https://github.com/fanpay/tsdc_ghost/blob/main/README.md) se deben seguir los siguientes pasos:
 
-1. Descargar este repositorio.
-2. Abrir una terminal e ir a la carpeta `pruebas_kraken`
+> El aplicativo GHOST bajo pruebas debe estar en ejecución. 
+
+1. Descargar [este](https://github.com/fanpay/tsdc_ghost) repositorio.
+2. Abrir una terminal en su máquina e ir a la carpeta `pruebas_kraken`
 3. Debemos instalar el paquete "kraken-node" dentro de nuestra carpeta. Puede utilizar el comando `npm install kraken-node`
 4. Si aún no tiene instalado el paquete `Appium` en su máquina, puede hacerlo con este comando `npm install -g appium`. 
 5. Asegúrese de haber instalado [Android Studio](https://developer.android.com/studio) en su máquina
@@ -23,4 +33,7 @@ Para ejecutar los escenarios [mencionados anteriormente](https://github.com/fanp
 8. Encontrará los resultados de la prueba en el directorio `reports` dentro de la carpeta `pruebas-kraken`.
 
 *NOTA*: Puede que al ejecutar tantas pruebas en paralelo, la versión de GHOST no soporte tantas conexiones tan seguidas y muestre el siguiente error: `Too many attempts try again in an hour`
-Para esto, puede modificar algunas variables de entorno de su instalación de GHOST. Este [post](https://forum.ghost.org/t/disable-too-many-attempts-try-again-in-an-hour/4087/2) puede ayudarle a solucionarlo. 
+Para esto, existen dos soluciones diferentes:
+- Puede modificar algunas variables de entorno de su instalación de GHOST. Este [post](https://forum.ghost.org/t/disable-too-many-attempts-try-again-in-an-hour/4087/2) puede ayudarle a solucionarlo. 
+- También puede [entrar a la base de datos de Ghost](https://codehangar.io/viewing-local-ghost-database-sqlite-db-files/) y ejecutar el siguiente comando:
+    - `delete from brute;`
