@@ -1,16 +1,16 @@
 # GHOST v3.41.1
 Repositorio creado para reportar incidencias del proyecto GHOST para The Software Design Company (TSDC)
 
-* Versión liberada: https://github.com/TryGhost/Ghost/releases/tag/3.41.1
-
-
-## Instrucciones de instalación
-
-* https://ghost.org/docs/install/
-
 ## Precondiciones
 
-* Tener instalado [NodeJS 12](https://nodejs.org/en/blog/release/v12.22.12) , [Cypress](https://thesoftwaredesignlab.github.io/AutTestingCodelabs/cypress-tutorial/index.html#0)
+* Tener instalado [NodeJS 12](https://nodejs.org/en/blog/release/v12.22.12)
+* Tener instalado [Cypress](https://thesoftwaredesignlab.github.io/AutTestingCodelabs/cypress-tutorial/index.html#0)
+* Tener instalado [Kraken](https://thesoftwaredesignlab.github.io/Kraken/)
+    - Sigue este tutorial para tener más idea sobre esta herramienta -> [Tutorial Kraken](https://thesoftwaredesignlab.github.io/AutTestingCodelabs/kraken-web-testing-tool/index.html#0)
+* Instalar la versión **3.41.1** de Ghost en su máquina local siguiendo este tutorial -> [Tutorial - Ghost](https://thesoftwaredesignlab.github.io/AutTestingCodelabs/ghost-local-deployment/index.html#0)
+    - Acá podrá encontrar más información oficial sobre las instrucciones de instalación: https://ghost.org/docs/install/
+    - Versión liberada: https://github.com/TryGhost/Ghost/releases/tag/3.41.1
+* Crear una cuenta de usuario en Ghost (Incluído en el tutorial del anterior punto).
 
 ## Wiki
 
@@ -79,7 +79,7 @@ Si hasta ahora se encuentra realizando sus primeros pasos en su sitio o no tiene
 
 ## Instrucciones para ejecutar los escenarios.
 
-### Cypres
+### Cypress
 
 Para ejecutar los escenarios mencionados anteriormente se debe seguir los siguientes pasos:
 
@@ -100,12 +100,12 @@ Para ejecutar los escenarios mencionados anteriormente se debe seguir los siguie
 
 ### Kraken
 
-Para ejecutar los escenarios mencionados anteriormente se debe seguir los siguientes pasos:
+Para ejecutar los escenarios [mencionados anteriormente](https://github.com/fanpay/tsdc_ghost/blob/main/README.md) se deben seguir los siguientes pasos:
 
 > El aplicativo GHOST bajo pruebas debe estar en ejecución. 
 
-1. Descargar este repositorio.
-2. Abrir una terminal e ir a la carpeta "pruebas_kraken"
+1. Descargar [este](https://github.com/fanpay/tsdc_ghost) repositorio.
+2. Abrir una terminal en su máquina e ir a la carpeta `pruebas_kraken`
 3. Debemos instalar el paquete "kraken-node" dentro de nuestra carpeta. Puede utilizar el comando `npm install kraken-node`
 4. Si aún no tiene instalado el paquete `Appium` en su máquina, puede hacerlo con este comando `npm install -g appium`. 
 5. Asegúrese de haber instalado [Android Studio](https://developer.android.com/studio) en su máquina
@@ -118,7 +118,10 @@ Para ejecutar los escenarios mencionados anteriormente se debe seguir los siguie
 8. Encontrará los resultados de la prueba en el directorio `reports` dentro de la carpeta `pruebas-kraken`.
 
 *NOTA*: Puede que al ejecutar tantas pruebas en paralelo, la versión de GHOST no soporte tantas conexiones tan seguidas y muestre el siguiente error: `Too many attempts try again in an hour`
-Para esto, puede modificar algunas variables de entorno de su instalación de GHOST. Este [post](https://forum.ghost.org/t/disable-too-many-attempts-try-again-in-an-hour/4087/2) puede ayudarle a solucionarlo. 
+Para esto, existen dos soluciones diferentes:
+- Puede modificar algunas variables de entorno de su instalación de GHOST. Este [post](https://forum.ghost.org/t/disable-too-many-attempts-try-again-in-an-hour/4087/2) puede ayudarle a solucionarlo. 
+- También puede [entrar a la base de datos de Ghost](https://codehangar.io/viewing-local-ghost-database-sqlite-db-files/) y ejecutar el siguiente comando:
+    - `delete from brute;`
 
 Por favor leer también las [siguientes recomendaciones adicionales](https://github.com/fanpay/tsdc_ghost/blob/main/pruebas_kraken/README.md)
 
