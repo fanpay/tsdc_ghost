@@ -137,6 +137,11 @@ Por favor leer también las [siguientes recomendaciones adicionales](https://git
 
 [Enlace al proyecto Kraken](https://github.com/fanpay/tsdc_ghost/tree/main/pruebas_kraken)
 
+### Evidencias Kraken
+Se adjuntan evidencias de ejecución
+- Archivo [zip](https://uniandes-my.sharepoint.com/:u:/g/personal/f_payan_uniandes_edu_co/ES7xQOLmYS1Pmu-QpKqBWIUBDvZKQeAAtL0tdUn5foygSg?e=IrPiTS)
+- [Folder completo](https://uniandes-my.sharepoint.com/:f:/g/personal/f_payan_uniandes_edu_co/El5wNaHx8sJNrEdHqYiCslUBhJ6NzVXRiGUImz4spQVt-A?e=GFWgg5)
+
 ## Colaboradores
 
 * Johana Constanza Ojeda Ávila - 202317664
