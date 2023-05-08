@@ -39,3 +39,9 @@ Para esto, existen dos soluciones diferentes:
 - Puede modificar algunas variables de entorno de su instalación de GHOST. Este [post](https://forum.ghost.org/t/disable-too-many-attempts-try-again-in-an-hour/4087/2) puede ayudarle a solucionarlo. 
 - También puede [entrar a la base de datos de Ghost](https://codehangar.io/viewing-local-ghost-database-sqlite-db-files/) y ejecutar el siguiente comando:
     - `delete from brute;`
+
+
+### Evidencias
+Se adjuntan evidencias de ejecución
+- Archivo [zip](https://uniandes-my.sharepoint.com/:u:/g/personal/f_payan_uniandes_edu_co/ES7xQOLmYS1Pmu-QpKqBWIUBDvZKQeAAtL0tdUn5foygSg?e=IrPiTS)
+- [Folder completo](https://uniandes-my.sharepoint.com/:f:/g/personal/f_payan_uniandes_edu_co/El5wNaHx8sJNrEdHqYiCslUBhJ6NzVXRiGUImz4spQVt-A?e=GFWgg5)
