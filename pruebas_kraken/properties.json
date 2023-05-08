@@ -110,5 +110,7 @@
     "BUTTON_UPLOAD_IMAGE_STAFF": "(//div[@class='gh-btn gh-btn-outline'])[1]",
     "TEXT_BUTTON_UPLOAD_IMAGE_STAFF": "Upload an image",
     "BUTTON_DELETE_PUBLICATION_LOGO_GENERAL": ".gh-setting-action-smallimg-delete > span",
-    "IMAGE_MAIN_LOGO": "(//h1[@class='site-title']//img[@class='site-logo'])[1]"
+    "IMAGE_MAIN_LOGO": "(//h1[@class='site-title']//img[@class='site-logo'])[1]",
+    "TEXT_BUTTON_UPLOAD_IMAGE_PAGE": "Upload page image",
+    "UNPLASH_FIRST_IMAGE": "(//div[@class='gh-unsplash-photo-footer']//a[@class='gh-unsplash-button'])[1]"
   }
