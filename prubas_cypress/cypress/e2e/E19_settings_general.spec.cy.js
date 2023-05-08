@@ -29,7 +29,7 @@ describe('Eliminar Logo', () => {
     cy.wait(2000)
     cy.get('.gh-setting-action-smallimg-delete > span').click()
     cy.wait(2000)
-    cy.get('#ember61 > span').click()
+    cy.get('.gh-btn.gh-btn-blue.gh-btn-icon.ember-view').click()
 
     // Then
     cy.get(".gh-nav-top").contains("View site").click();
@@ -38,4 +38,3 @@ describe('Eliminar Logo', () => {
   });
 
 })
-
