@@ -51,6 +51,16 @@ Aquí hay algunas características clave de la funcionalidad de "Settings" en GH
 
 Si hasta ahora se encuentra realizando sus primeros pasos en su sitio o no tiene una publicación que no quiere que el mundo vea todavía porque no está lista para su lanzamiento, puede ocultar su sitio detrás de una frase de contraseña compartida básica. Ghost genera aleatoriamente una breve frase de contraseña que puede compartir con cualquier persona que necesite acceso al sitio mientras trabaja en él. Mientras esta configuración esté habilitada, todas las funciones de optimización del motor de búsqueda se desactivarán para ayudar a mantener su sitio bajo el radar.
 
+## Precondiciones a tener en cuenta con algunos escenarios de prueba:
+
+
+E1: (Sólo para Cypress) Para este escenario se tiene creado previamente un post llamado "Escenario 1".
+E7: Para este esceneario debe estar cargada previamente una foto de perfil del usuario. En la sección de Staff > Active Users > Owner > profile picture.
+E10: Para este escenario, se tiene previamente creado una página con el nombre "pagina cambiar foto" y también en la sección de "Page Settings" se carga una foto antes de correr la prueba.
+E16: Para este escenario, se tiene previamente creado un post con el nombre "Post tag interno" 
+E19: Para este escenario es necesario tener una imagen cargada en la sección de Publication Logo ubicada en "General Settings"
+
+
 ## Listado de 21 escenarios de pruebas
 
 | Id | Descripcion | Funcionalidad | Responsable |
