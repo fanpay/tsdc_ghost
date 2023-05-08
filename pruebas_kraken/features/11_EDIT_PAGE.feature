@@ -36,10 +36,10 @@ Scenario: Como un usuario inicio sesión, voy a la sección de "Pages", seleccio
 
 
     #DELETE PAGE THAT WAS CREATED
-    Given I click element with xpath "<TITLE_FIRST_PUBLISHED_POST>"
+    Given I click element with xpath "<TITLE_FIRST_PAGE_PUBLISHED>"
     And I wait for 2 seconds
     Then I click element with xpath "<BTN_PUBLISH>" 
-    And I wait for 2 seconds
+    And I wait for 4 seconds
     Then I click element with xpath "<LNK_DELETE_POST>" 
     And I wait for 2 seconds
     Then I click element with xpath "<BTN_CONFIRM_DELETE>" 
