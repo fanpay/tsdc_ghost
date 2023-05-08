@@ -1,8 +1,8 @@
 {
     "USERNAME_EID": "input[name='identification']",
-    "USERNAME": "f.payan@uniandes.edu.co",
+    "USERNAME": "j.ojedaa@uniandes.edu.co",
     "PASSWORD_EID": "input[name='password']",
-    "PASSWORD": "Testing123456789.",
+    "PASSWORD": "0123456789",
     "BTN_SIGNIN_EID": "(//button[@class='login gh-btn gh-btn-blue gh-btn-block gh-btn-icon ember-view'])[1]",
     "MOCK_TITLE_POST_1": "POST con Texto",
     "MOCK_CONTENT_POST_1": "Hey post has sido creado",
