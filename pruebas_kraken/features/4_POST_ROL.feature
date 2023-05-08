@@ -3,33 +3,28 @@ Feature: Crear post y asignar rol de editor
 @user81 @web
 Scenario: Como usuario quiero crear un post y asignar un rol de editor a alguna persona asociada a Ghost
     Given I login in ghost with my credentials with username "<USERNAME>" and password "<PASSWORD>"
-    And I navigate to page "http://localhost:2368/ghost/#/staff"
     And I wait for 2 seconds
-    And I click element with xpath "<ADD_NEW_STAFF_BUTTON_XPATH>"
-    And I wait for 2 seconds
-    And I set text "<EDITOR_USERNAME>" on element with xpath "<STAFF_USERNAME_INPUT_XPATH>"
-    And I wait for 2 seconds
-    And I set text "<EDITOR_EMAIL>" on element with xpath "<STAFF_EMAIL_INPUT_XPATH>"
-    And I wait for 2 seconds
-    And I click element with xpath "<SAVE_STAFF_BUTTON_XPATH>"
-    And I wait for 2 seconds
-    And I navigate to page "http://localhost:2368/ghost/#/posts"
-    And I wait for 2 seconds
-    And I click element with xpath "<NEW_POST_BUTTON_XPATH>"
-    And I wait for 2 seconds
-    And I set text "<POST_TITLE>" on element with xpath "<POST_TITLE_INPUT_XPATH>"
-    And I wait for 2 seconds
-    And I set text "<POST_CONTENT>" on element with xpath "<POST_CONTENT_INPUT_XPATH>"
-    And I wait for 2 seconds
-    And I click element with xpath "<ASSIGN_EDITOR_BUTTON_XPATH>"
-    And I wait for 2 seconds
-    And I set text "<EDITOR_USERNAME>" on element with xpath "<EDITOR_SEARCH_INPUT_XPATH>"
-    And I wait for 2 seconds
-    And I click element with xpath "<SELECT_EDITOR_BUTTON_XPATH>"
-    And I wait for 2 seconds
-    And I click element with xpath "<PUBLISH_POST_BUTTON_XPATH>"
-    And I wait for 2 seconds
-    Then I should see the text "<POST_TITLE>" on plain element with xpath "<POST_TITLE_XPATH>"
-    And I wait for 2 seconds
-    And I should see the text "<EDITOR_USERNAME>" on plain element with xpath "<POST_EDITOR_XPATH>"
-    And I wait for 2 seconds
+    And I create a new post with title "<TITLE_POST_FIRST_SCENARIO>" and content "<CONTENT_POST_FIRST_SCENARIO>"
+
+    Given I navigate to page "http://localhost:2368/ghost/#/posts"
+        And I click element with xpath "<TITLE_FIRST_PUBLISHED_POST>"
+        And I wait for 2 seconds
+    Then I click element with xpath "<SETTINGS_BUTTON>"
+        And I set text "<DEFAULT_AUTHOR_GHOST>" on element with xpath "<MULTIPLE_INPUT_AUTHOR_POST>"
+        And I wait for 2 seconds
+        And Enter on element with xpath "<MULTIPLE_INPUT_AUTHOR_POST>"
+        And I wait for 4 seconds
+    Then I click element with xpath "<CLOSE_SETTINGS_BUTTON>"
+        And I wait for 2 seconds
+    Then I click element with xpath "<BTN_PUBLISH>"
+        And I wait for 2 seconds
+        And I click element with xpath "<BTN_BLUE_PUBLISH>"
+
+    Given I navigate to page "http://localhost:2368/ghost/#/posts"
+        And I click element with xpath "<TITLE_FIRST_PUBLISHED_POST>"
+        And I wait for 2 seconds
+    Then I click element with xpath "<SETTINGS_BUTTON>"
+        And I should see a partial text "<DEFAULT_AUTHOR_GHOST>" on plain element with xpath "<DROPDOWN_AUTHOR_POST>"
+
+    #Rollback for first publication created
+    Then Delete first publication created with title "<TITLE_POST_FIRST_SCENARIO>"

@@ -32,9 +32,9 @@ class GhostPage {
       await this.driver.url('http://localhost:2368/ghost/#/editor/post');
       await this.wait(3);
       await this.set_text(properties.POST_TITLE_ECLASS, title);
-      await this.wait(1);
+      await this.wait(2);
       await this.set_text(properties.CONTENT_ECLASS, content);
-      await this.wait(1);
+      await this.wait(2);
       await this.click(properties.BTN_PUBLISH);
       await this.wait(1);
       await this.click(properties.BTN_BLUE_PUBLISH);

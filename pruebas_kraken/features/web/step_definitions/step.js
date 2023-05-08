@@ -53,19 +53,14 @@ Then('I should see the color {kraken-string} in element with xpath {kraken-strin
   let colorElement = await element.getCSSProperty("background")
   let colorValue = colorElement.value
 
-  console.log("xpath : " + xpath);
-  console.log("color : " + color);
-  console.log("includes : " + colorElement.value);
-
-
   assert.ok(colorValue.includes(color), `Expected field value "${colorValue}" to contain partial text "${color}"`);
 });
 
 
-Then('The field with id {kraken-string} should not exist', async function (id) {
+Then('The field with selector {kraken-string} should not exist', async function (selector) {
     let elements = await this.driver.$(selector);
     if (elements.length > 0) {
-      throw new Error(`The field with id "${id}" should not exist`);
+      throw new Error(`The field with selector "${selector}" should not exist`);
     }
 });
 

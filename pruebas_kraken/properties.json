@@ -1,8 +1,8 @@
 {
     "USERNAME_EID": "input[name='identification']",
-    "USERNAME": "j.ojedaa@uniandes.edu.co",
+    "USERNAME": "f.payan@uniandes.edu.co",
     "PASSWORD_EID": "input[name='password']",
-    "PASSWORD": "0123456789",
+    "PASSWORD": "Testing123456789.",
     "BTN_SIGNIN_EID": "(//button[@class='login gh-btn gh-btn-blue gh-btn-block gh-btn-icon ember-view'])[1]",
     "MOCK_TITLE_POST_1": "POST con Texto",
     "MOCK_CONTENT_POST_1": "Hey post has sido creado",
@@ -98,5 +98,17 @@
     "PRIVATE_SITE_TITLE_TEXT": "This site is private",
     "BTN_NIGHT_SHIFT_LABS": "(//label[contains(@for,'labs-nightShift')])[1]",
     "HEADER_SECTION": "(//header[contains(@class,'gh-canvas-header')])[1]",
-    "NIGH_SHIFT_COLOR": "rgb(38, 50, 56)"
+    "NIGH_SHIFT_COLOR": "rgb(38, 50, 56)",
+    "TITLE_POST_FIRST_SCENARIO": "Escenario Prueba 1",
+    "CONTENT_POST_FIRST_SCENARIO": "Contenido Escenario Prueba 1",
+    "DEFAULT_AUTHOR_GHOST": "Ghost",
+    "MULTIPLE_INPUT_AUTHOR_POST": "(//div[@id='author-list']//input)[1]",
+    "DROPDOWN_AUTHOR_POST": "(//div[@id='author-list'])[1]",
+    "BUTTON_EDIT_USER_IMAGE_STAFF": "(//button[@class='edit-user-image'])[1]",
+    "BUTTON_DELETE_IMAGE_STAFF": "(//a[@class='image-cancel'])[1]",
+    "BUTTON_SAVE_CHANGES_IMAGE_STAFF": "(//button[@class='gh-btn gh-btn-blue right gh-btn-icon ember-view'])[1]",
+    "BUTTON_UPLOAD_IMAGE_STAFF": "(//div[@class='gh-btn gh-btn-outline'])[1]",
+    "TEXT_BUTTON_UPLOAD_IMAGE_STAFF": "Upload an image",
+    "BUTTON_DELETE_PUBLICATION_LOGO_GENERAL": ".gh-setting-action-smallimg-delete > span",
+    "IMAGE_MAIN_LOGO": "(//h1[@class='site-title']//img[@class='site-logo'])[1]"
   }
