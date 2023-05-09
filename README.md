@@ -106,7 +106,7 @@ Para ejecutar los escenarios mencionados anteriormente se debe seguir los siguie
 9. Para seguir con la ejecución de las pruebas faltantes, en el panel izquierdo encontrará las demás pruebas y basta con dar click y la ejecución iniciará.
 
 
-[Enlace al proyecto Cypress](https://github.com/fanpay/tsdc_ghost/tree/main/prubas_cypress)
+[Enlace al proyecto Cypress](https://github.com/fanpay/tsdc_ghost/tree/main/cypress/3.41.1)
 
 ### Kraken
 
@@ -135,7 +135,7 @@ Para esto, existen dos soluciones diferentes:
 
 Por favor leer también las [siguientes recomendaciones adicionales](https://github.com/fanpay/tsdc_ghost/blob/main/pruebas_kraken/README.md)
 
-[Enlace al proyecto Kraken](https://github.com/fanpay/tsdc_ghost/tree/main/pruebas_kraken)
+[Enlace al proyecto Kraken](https://github.com/fanpay/tsdc_ghost/tree/main/kraken/3.41.1)
 
 ### Evidencias Kraken
 Se adjuntan evidencias de ejecución
