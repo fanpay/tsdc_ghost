@@ -2,8 +2,8 @@ module.exports = {
   projectId: "Ghost test cases",
   ghostUrl: "http://localhost:2368/ghost/",
   ghostAuthUrl: "http://localhost:2368/ghost/api/v3/admin/session",
-  email: "f.payan@uniandes.edu.co",
-  password: "Testing123456789.",
+  email: "user@email.com",
+  password: "Qwertyuiop",
   postEditNegativeText: "http://www.uniandes.edu.co",
   chromeWebSecurity: false,
 
