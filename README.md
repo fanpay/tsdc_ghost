@@ -136,6 +136,17 @@ Para esto, existen dos soluciones diferentes:
 
 Por favor leer también las [siguientes recomendaciones adicionales](https://github.com/fanpay/tsdc_ghost/blob/main/pruebas_kraken/README.md)
 
+### Screenshots Kraken
+
+* Después de cada ejecución se creará una carpeta llamada "screenshots" y dentro de esta, una carpeta con el nombre del escenario. Dentro de esta se generarán las capturas de pantalla por cada paso de la prueba.
+
+    Ejemplo para el escenario "E12":
+    - screenshots
+        - E12_paginas
+            - E12 (1).png
+
+* Kraken seguirá exportando sus screenshots por defecto en la carpeta de `reports`. Estas imágenes seguirán conservando el nombre de la imagen con un número consecutivo aleatorio basado en la fecha.
+
 [Enlace al proyecto Kraken](https://github.com/fanpay/tsdc_ghost/tree/main/kraken/3.41.1)
 
 ### Evidencias Kraken
