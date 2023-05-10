@@ -45,3 +45,14 @@ Para esto, existen dos soluciones diferentes:
 Se adjuntan evidencias de ejecución
 - Archivo [zip](https://uniandes-my.sharepoint.com/:u:/g/personal/f_payan_uniandes_edu_co/ES7xQOLmYS1Pmu-QpKqBWIUBDvZKQeAAtL0tdUn5foygSg?e=IrPiTS)
 - [Folder completo](https://uniandes-my.sharepoint.com/:f:/g/personal/f_payan_uniandes_edu_co/El5wNaHx8sJNrEdHqYiCslUBhJ6NzVXRiGUImz4spQVt-A?e=GFWgg5)
+
+
+### Screenshots
+* Después de cada ejecución se creará una carpeta llamada "screenshots" y dentro de esta, una carpeta con el nombre del escenario. Dentro de esta se generarán las capturas de pantalla por cada paso de la prueba.
+
+    Ejemplo para el escenario "E12":
+    - screenshots
+        - E12_paginas
+            - E12 (1).png
+
+* Kraken seguirá exportando sus screenshots por defecto en la carpeta de `reports`. Estas imágenes seguirán conservando el nombre de la imagen con un número consecutivo aleatorio basado en la fecha.
