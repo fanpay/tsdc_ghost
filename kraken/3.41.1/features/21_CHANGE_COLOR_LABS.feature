@@ -3,7 +3,7 @@ Feature: Cambiar todo el sitio principal a la opción Night Shift y verificar ca
 @user75 @web
 Scenario: Como un usuario inicio sesión, voy a la sección de "Labs" ubicada en General, cambiar la opción Night shift y verificar que en las secciones: Posts, Pages, Tags, Staf, General, Design, Code injection, Integrations y Labs el fondo corresponde al tema oscuro de GHost (rgb(38, 50, 56)) 
 
-    Given I login in ghost with my credentials with username "<USERNAME>" and password "<PASSWORD>"
+    Given For scenario "E21", I login in ghost using credentials with username "<USERNAME>" and password "<PASSWORD>"
     Then I navigate to page "http://localhost:2368/ghost/#/settings/labs"
     And I wait for 1 seconds
     Given I click element with xpath "<BTN_NIGHT_SHIFT_LABS>"

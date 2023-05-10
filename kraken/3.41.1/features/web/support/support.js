@@ -3,6 +3,7 @@ const { setWorldConstructor, setDefaultTimeout, World } = require('@cucumber/cuc
 class KrakenWorld {
   constructor(input) {
     let params = input.parameters;
+    console.log("INNNNN-> "+JSON.stringify(params));
     this.userId = params.id;
     this.device = params.device || {};
     this.testScenarioId = params.testScenarioId;

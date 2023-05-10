@@ -27,9 +27,26 @@ class GhostPage {
       const element = await this.driver.$(selector);
       return await element.getText();
     }
-  
+
+    async login(username, password){
+      await this.load('http://localhost:2368/ghost/#/signin');
+      await this.set_text(properties.USERNAME_EID, username);
+      await this.set_text(properties.PASSWORD_EID, password);
+      await this.click(properties.BTN_SIGNIN_EID);
+      await this.wait(2);
+    }
+
+    async logout(){
+      await this.load('http://localhost:2368/ghost/#/posts');
+      await this.wait(2);
+      await this.click(properties.NAV_BOTTOM);
+      await this.wait(2);
+      await this.click(properties.MENU_SIGNOUT);
+      await this.wait(2);
+    }
+
     async create_post(title, content) {
-      await this.driver.url('http://localhost:2368/ghost/#/editor/post');
+      await this.load('http://localhost:2368/ghost/#/editor/post');
       await this.wait(3);
       await this.set_text(properties.POST_TITLE_ECLASS, title);
       await this.wait(2);
@@ -42,7 +59,7 @@ class GhostPage {
     }
 
     async delete_first_post(title) {
-      await this.driver.url('http://localhost:2368/ghost/#/posts');
+      await this.load('http://localhost:2368/ghost/#/posts');
       await this.click(properties.FIRST_POST_PUBLISHED);
       await this.wait(2);
       await this.click(properties.SETTINGS_BUTTON_PUBLICATION_ECLASS);
@@ -53,7 +70,7 @@ class GhostPage {
     }
 
     async create_draft(title, content) {
-      await this.driver.url('http://localhost:2368/ghost/#/editor/post');
+      await this.load('http://localhost:2368/ghost/#/editor/post');
       await this.wait(3);
       await this.set_text(properties.POST_TITLE_ECLASS, title);
       await this.wait(1);
@@ -64,7 +81,7 @@ class GhostPage {
     }
 
     async delete_first_draft(title) {
-      await this.driver.url('http://localhost:2368/ghost/#/posts');
+      await this.load('http://localhost:2368/ghost/#/posts');
       await this.click(properties.STATUS_FIRST_DRAFT_POST);
       await this.wait(2);
       await this.click(properties.SETTINGS_BUTTON_PUBLICATION_ECLASS);

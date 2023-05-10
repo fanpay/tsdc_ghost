@@ -4,7 +4,7 @@ Feature: Cambiar título de la navegación principal por un valor vacío y ver u
 Scenario: Como un usuario inicio sesión, voy a la sección de Design, ubicarse en la parte de "Navigation", dejar vacío el primer label y guardar cambios. Debe aparecer un mensaje de error en rojo diciendo "You must specify a label" y el botón de guardado debe estar de color rojo y tener un texto que diga "Retry". Luego ir a la página principal, verificar el menú principal y no debe existir la opción que se intentó crear. Por último, se cierra la sesión. (escenario negativo). 
 
 
-    Given I login in ghost with my credentials with username "<USERNAME>" and password "<PASSWORD>"
+    Given For scenario "E20", I login in ghost using credentials with username "<USERNAME>" and password "<PASSWORD>"
     And I navigate to page "http://localhost:2368/ghost/#/settings/design"
     And I wait for 1 seconds
     Then I should see the text "<DESIGN_TEXT_GENERAL_SECTION>" on plain element with xpath "<HEADER_TITLE_PAGE_SECTION>"

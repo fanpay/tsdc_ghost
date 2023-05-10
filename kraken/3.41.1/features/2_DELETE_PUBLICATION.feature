@@ -3,7 +3,7 @@ Feature: Eliminar POST
 @user60 @web
 Scenario: Como un usuario inicio sesión, creo una publicación, luego visualizo la lista de publicaciones, busco la que creé y elimino el registro. Vuelvo a comprobar la lista de publicaciones y la publicación creada ya no debe estar
 
-    Given I login in ghost with my credentials with username "<USERNAME>" and password "<PASSWORD>"
+    Given For scenario "E2", I login in ghost using credentials with username "<USERNAME>" and password "<PASSWORD>"
     And I navigate to page "http://localhost:2368/ghost/#/editor/post"
     And I wait for 2 seconds
     And I create a new post with title "<MOCK_TITLE_POST_1>" and content "<MOCK_CONTENT_POST_1>"

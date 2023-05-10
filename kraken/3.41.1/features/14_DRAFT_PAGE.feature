@@ -3,7 +3,7 @@ Feature: Crear borrador de una página en módulo Pages
 @user64 @web
 Scenario: Como un usuario inicio sesión, voy a la sección de "Pages", crearé una página que incluya un título y una descripción, la guardo como borrador, cerrar sesión, volver a iniciar sesión, ir a la sección de "Pages", verificar que la publicación creada tenga el estado de borrador o "draft"
 
-    Given I login in ghost with my credentials with username "<USERNAME>" and password "<PASSWORD>"
+    Given For scenario "E14", I login in ghost using credentials with username "<USERNAME>" and password "<PASSWORD>"
     And I navigate to page "http://localhost:2368/ghost/#/pages"
     And I wait for 2 seconds
     Then I should see the text "<HEADER_TITLE_TEXT_PAGE_SECTION>" on plain element with xpath "<HEADER_TITLE_PAGE_SECTION>"
@@ -12,12 +12,11 @@ Scenario: Como un usuario inicio sesión, voy a la sección de "Pages", crearé 
     Then I set text "<MOCK_TITLE_PAGE_1>" on element with xpath "<POST_TITLE_ECLASS>"
     And I set text "<MOCK_CONTENT_POST_1>" on element with xpath "<CONTENT_ECLASS>"
     Then  I click element with xpath "<LNK_BACK_POSTS>"
-    And I wait for 2 seconds
     
     Then Sign out from ghost session
     And I wait for 2 seconds
 
-    Given I login in ghost with my credentials with username "<USERNAME>" and password "<PASSWORD>"
+    Given For scenario "E1", I login in ghost using credentials with username "<USERNAME>" and password "<PASSWORD>"
     And I navigate to page "http://localhost:2368/ghost/#/pages"
     And I wait for 2 seconds
     Then I should see the text "<MOCK_TITLE_PAGE_1>" on plain element with xpath "<TITLE_FIRST_PAGE_PUBLISHED>"
