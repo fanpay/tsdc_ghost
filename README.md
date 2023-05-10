@@ -20,6 +20,7 @@ Visita nuestra wiki [aquí](https://github.com/fanpay/tsdc_ghost/wiki/Resultados
 
 * [Resultados de pruebas automaticas usando Monkeys y Rippers](https://github.com/fanpay/tsdc_ghost/wiki/Resultados-de-pruebas-autom%C3%A1ticas)
 * [Pros y contras de herramientas usadas para pruebas E2E](https://github.com/fanpay/tsdc_ghost/wiki/Cypress-Vs-Kraken)
+* [Pros y contras de herramientas usadas para pruebas VRT](https://github.com/fanpay/tsdc_ghost/wiki/Pros-y-contras-de-herramientas-usadas-para-pruebas-VRT)
 
 
 ## Listado de 5 funcionalidades bajo pruebas
