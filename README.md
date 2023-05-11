@@ -21,7 +21,10 @@ Visita nuestra wiki [aquí](https://github.com/fanpay/tsdc_ghost/wiki/Resultados
 * [Resultados de pruebas automaticas usando Monkeys y Rippers](https://github.com/fanpay/tsdc_ghost/wiki/Resultados-de-pruebas-autom%C3%A1ticas)
 * [Pros y contras de herramientas usadas para pruebas E2E](https://github.com/fanpay/tsdc_ghost/wiki/Cypress-Vs-Kraken)
 * [Pros y contras de herramientas usadas para pruebas VRT](https://github.com/fanpay/tsdc_ghost/wiki/Pros-y-contras-de-herramientas-usadas-para-pruebas-VRT)
-
+* [Script para generar pruebas de regresión visual VRT usando ResembleJS](https://github.com/fanpay/tsdc_ghost/tree/main/script_vrt)
+    * [Ejemplo del reporte generado](https://fanpay.github.io/tsdc_ghost/report_vrt/E3/results/report.html)
+* [Sistema de incidencias](https://github.com/fanpay/tsdc_ghost/issues)
+* [Video explicativo sobre nueva funcionalidad de pantallazos para Cypress Y Kraken](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
 ## Listado de 5 funcionalidades bajo pruebas
 
