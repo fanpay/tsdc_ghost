@@ -1,8 +1,8 @@
 /**
  Como un usuario inicio sesión, selecciono la sección “Staff”, 
  invito a un usuario staff, le asigo un rol Author y posteriormente remuevo la invitación. */
- describe('Editar post peviamente creado y visualizarlo.', () => {
-  let folderPathSS = 'E13_pages_date/E13';
+ describe('Asignar rol en Staff', () => {
+  let folderPathSS = 'E6_staff';
     let titulo = 'Post para eliminar';
     // Given
     beforeEach(() => {

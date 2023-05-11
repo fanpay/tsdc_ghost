@@ -4,7 +4,7 @@ en “General”, y eliminaré el logo. Posterior a esto, voy a ir a la sección
 principal y verificar que los cambios se hicieron con éxito.
 *  */
 describe('Eliminar Logo', () => {
-  let folderPathSS = 'E19_settings_general/E19';
+  let folderPathSS = 'E19_settings';
 
   beforeEach(() => {
     cy.visit(Cypress.config("ghostUrl"))

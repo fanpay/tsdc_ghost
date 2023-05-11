@@ -2,8 +2,8 @@
  Como un usuario inicio sesión, creo una página, determinaré 
  una fecha diferente al día de la creación y la visualizaré 
  en el apartado de páginas agendadas.*  */
- describe('Editar post peviamente creado y visualizarlo.', () => {
-  let folderPathSS = 'E13_pages_date/E13';
+ describe('Creación de página con día diferente', () => {
+  let folderPathSS = 'E13_pages';
     let titulo = 'Post para eliminar';
     // Given
     beforeEach(() => {

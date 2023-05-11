@@ -1,15 +1,12 @@
 /**
- Como un usuario inicio sesión, voy a ir a la sección de tags,
-  crear un nuevo tag, agregar el símbolo “#” al inicio del nombre 
-  del tag para clasificarlo como etiqueta interna. Ir a la sección de 
-  “publicaciones”, elegir la primera publicación, editarla y asociar 
-  la etiqueta interna, devolverse a la sección de tags y seleccionar
-   “etiquetas internas”, verificar que el número de post ya no sea 0 sino 1.
+ Como un usuario inicio sesión, creó una etiqueta posteriormente
+  creó un post con la etiqueta creada y publicó inmediatamente 
+  el post. Finalmente el post es publicado con la etiqueta creada.
 
 *  */
 
 describe('Crear un tag con clasificación interna', () => {
-  let folderPathSS = 'E16_tags/E16';
+  let folderPathSS = 'E15_tags';
   const tag = "Tag_Externo";
 
   beforeEach(() => {

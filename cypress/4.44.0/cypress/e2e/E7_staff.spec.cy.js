@@ -1,8 +1,8 @@
 /**
  Como usuario quiero hacer inicio de sesión, ir al apartado de "staff",
  * ver la información del usuario, eliminar la foto de perfil y guardar los cambios.*  */
- describe('Editar post peviamente creado y visualizarlo.', () => {
-    let folderPathSS = 'E7_staff_imagen/E7';
+ describe('Eliminar foto de perfil', () => {
+    let folderPathSS = 'E7_staff';
     let titulo = 'Post para eliminar';
     // Given
     beforeEach(() => {

@@ -1,10 +1,13 @@
 /**
-Como un usuario inicio sesión, voy a ir a la sección “PUBLICATION IDENTITY” 
-en “General”, y eliminaré el logo. Posterior a esto, voy a ir a la sección 
-principal y verificar que los cambios se hicieron con éxito.
+Como un usuario inicio sesión, me dirijo a la sección “Labs” 
+ubicada en General y la selecciono, ubico la opción 
+Night shift la selecciono para que cambie y me dirijo a
+ las secciones: Posts, Pages, Tags, Staf, General, Design, 
+ Code injection, Integrations y Labs y observo que el fondo
+  de cada sección corresponde al tema oscuro de GHost (rgb(38, 50, 56))
 *  */
-describe('Eliminar Logo', () => {
-  let folderPathSS = 'E19_settings_general/E19';
+describe('Dark mode', () => {
+  let folderPathSS = 'E21_settings';
 
   beforeEach(() => {
     cy.visit(Cypress.config("ghostUrl"))

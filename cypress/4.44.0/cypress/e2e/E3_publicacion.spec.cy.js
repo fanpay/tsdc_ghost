@@ -6,7 +6,7 @@
  *  */
 
 describe('Crear un nuevo post con agendamiento de publicacion.', () => {
-  let folderPathSS = 'E1_publicacion2';
+  let folderPathSS = 'E3_publicacion';
   beforeEach(() => {
     cy.visit(Cypress.config("ghostUrl"))
     cy.wait(1000)
