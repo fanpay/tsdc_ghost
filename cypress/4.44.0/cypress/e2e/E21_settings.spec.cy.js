@@ -7,7 +7,7 @@ Night shift la selecciono para que cambie y me dirijo a
   de cada sección corresponde al tema oscuro de GHost (rgb(38, 50, 56))
 *  */
 describe('Dark mode', () => {
-  let folderPathSS = 'E21_settings';
+  let folderPathSS = 'E21_settings/E21';
 
   beforeEach(() => {
     cy.visit(Cypress.config("ghostUrl"))

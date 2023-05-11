@@ -6,7 +6,7 @@
 *  */
 
 describe('Crear un tag con clasificación interna', () => {
-  let folderPathSS = 'E15_tags';
+  let folderPathSS = 'E15_tags/E15';
   const tag = "Tag_Externo";
 
   beforeEach(() => {

@@ -2,7 +2,7 @@
  Como un usuario inicio sesión, selecciono la sección “Staff”, 
  invito a un usuario staff, le asigo un rol Author y posteriormente remuevo la invitación. */
  describe('Asignar rol en Staff', () => {
-  let folderPathSS = 'E6_staff';
+  let folderPathSS = 'E6_staff/E6';
     let titulo = 'Post para eliminar';
     // Given
     beforeEach(() => {

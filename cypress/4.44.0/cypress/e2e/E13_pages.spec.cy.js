@@ -3,7 +3,7 @@
  una fecha diferente al día de la creación y la visualizaré 
  en el apartado de páginas agendadas.*  */
  describe('Creación de página con día diferente', () => {
-  let folderPathSS = 'E13_pages';
+  let folderPathSS = 'E13_pages/E13';
     let titulo = 'Post para eliminar';
     // Given
     beforeEach(() => {
