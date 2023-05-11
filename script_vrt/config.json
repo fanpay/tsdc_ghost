@@ -1,6 +1,7 @@
 {
     "titleEscenario": "Titulo del escenario",
     "idEscenario": "E3",
+    "numImagenes": 1,
     "options":{
         "output": {
             "errorColor": {

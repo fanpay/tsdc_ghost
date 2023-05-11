@@ -2,14 +2,14 @@ const compareImages = require("resemblejs/compareImages")
 const fs = require('fs');
 
 const config = require("./config.json");
-const {titleEscenario, options, idEscenario } = config;
+const {titleEscenario, options, idEscenario, numImagenes } = config;
 
 (async () => await executeTest())();
 
 async function executeTest() {
 
     let resultInfo = [];
-    for (let index = 1; index < 12; index++) {
+    for (let index = 1; index <= numImagenes; index++) {
         console.log(`./ghost-3.41.1-screens/E3 (${index}).png`);
 
         const data = await compareImages(
