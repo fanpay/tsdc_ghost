@@ -1,6 +1,9 @@
 # GHOST v3.41.1
 Repositorio creado para reportar incidencias del proyecto GHOST para The Software Design Company (TSDC)
 
+# Vídeo Semana 6
+[Enlace al video](https://youtu.be/dtIm2GfxmG4)
+
 ## Precondiciones
 
 * Tener instalado [NodeJS 12](https://nodejs.org/en/blog/release/v12.22.12)
