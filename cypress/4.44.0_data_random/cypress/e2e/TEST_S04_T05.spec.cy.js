@@ -16,7 +16,7 @@ context("Actions", () => {
       .then(cy.wrap);
   };
 
-  it("TEST-SINGUP, empty fields, random", () => {
+  it("TEST-SIGN-UP, empty fields, random", () => {
     cy.get("iframe");
     cy.get("footer").find("li.nav-sign-up").click();
     cy.wait(1000);
@@ -28,7 +28,7 @@ context("Actions", () => {
     getIframeBody().find("input.error").last().should("have.length", 1);
   });
 
-  it("TEST-SINGUP, empty name invalid email, random", () => {
+  it("TEST-SIGN-UP, empty name invalid email, random", () => {
     cy.get("iframe");
     cy.get("footer").find("li.nav-sign-up").click();
     cy.wait(1000);
@@ -41,7 +41,7 @@ context("Actions", () => {
     getIframeBody().find("input.error").last().should("have.length", 1);
   });
 
-  it("TEST-SINGUP, valid name invalid email, random", () => {
+  it("TEST-SIGN-UP, valid name invalid email, random", () => {
     cy.get("iframe");
     cy.get("footer").find("li.nav-sign-up").click();
     cy.wait(1000);
@@ -55,7 +55,7 @@ context("Actions", () => {
     getIframeBody().find("input.error").last().should("have.length", 1);
   });
 
-  it("TEST-SINGUP, empty email to sign in, random", () => {
+  it("TEST-SIGN-UP, empty email to sign in, random", () => {
     cy.get("iframe");
     cy.get("footer").find("li.nav-sign-up").click();
     cy.wait(1000);
@@ -71,7 +71,7 @@ context("Actions", () => {
     getIframeBody().find("input.error").first().should("have.length", 1);
   });
 
-  it("TEST-SINGUP, invalid email to sign in, random", () => {
+  it("TEST-SIGN-UP, invalid email to sign in, random", () => {
     cy.get("iframe");
     cy.get("footer").find("li.nav-sign-up").click();
     cy.wait(1000);
