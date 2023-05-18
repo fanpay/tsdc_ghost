@@ -18,3 +18,9 @@ reports
 
 # Ignorar archivos de rastreo kraken
 .kraken
+
+#Ignora carpetas de screenshots
+screenshots
+
+#Ignora archivos de imágenes
+*.png
