@@ -1,6 +1,6 @@
 # RECOMENDACIONES IMPORTANTES
 
-Se deben adaptar las nuevas credenciales de autenticación dependiendo del usuario creado en la instalación de GHOST de su propia máquina. Esto se hace en el archivo [properties](https://github.com/fanpay/tsdc_ghost/blob/main/pruebas_kraken/properties.json) y las variables a editar serían:
+Se deben adaptar las nuevas credenciales de autenticación dependiendo del usuario creado en la instalación de GHOST de su propia máquina. Esto se hace en el archivo [properties](https://github.com/fanpay/tsdc_ghost/blob/main/kraken/4.44.0_data_random/properties.json) y las variables a editar serían:
 
     "USERNAME": "f.payan@uniandes.edu.co",
     "PASSWORD": "Testing123456789.",
@@ -9,10 +9,10 @@ Se deben adaptar las nuevas credenciales de autenticación dependiendo del usuar
 
 ## Precondiciones
 
-* Tener instalado [NodeJS 12](https://nodejs.org/en/blog/release/v12.22.12) 
+* Tener instalado [NodeJS 16](https://nodejs.org/en/blog/release/v16.20.0) 
 * Tener instalado [Kraken](https://thesoftwaredesignlab.github.io/Kraken/)
     - Sigue este tutorial para tener más idea sobre esta herramienta -> [Tutorial Kraken](https://thesoftwaredesignlab.github.io/AutTestingCodelabs/kraken-web-testing-tool/index.html#0)
-* Instalar la versión **3.41.1** de Ghost en su máquina local siguiendo este tutorial -> [Tutorial - Ghost](https://thesoftwaredesignlab.github.io/AutTestingCodelabs/ghost-local-deployment/index.html#0)
+* Instalar la versión **4.44.0** de Ghost en su máquina local siguiendo este tutorial -> [Tutorial - Ghost](https://www.coursera.org/learn/pruebas-automatizadas-software/ungradedWidget/dNjnt/pruebas-de-regresion-visual)
 * Crear una cuenta de usuario en Ghost (Incluído en el tutorial del anterior punto).
 
 ### Kraken
@@ -41,18 +41,6 @@ Para esto, existen dos soluciones diferentes:
     - `delete from brute;`
 
 
-### Evidencias
-Se adjuntan evidencias de ejecución
-- Archivo [zip](https://uniandes-my.sharepoint.com/:u:/g/personal/f_payan_uniandes_edu_co/ES7xQOLmYS1Pmu-QpKqBWIUBDvZKQeAAtL0tdUn5foygSg?e=IrPiTS)
-- [Folder completo](https://uniandes-my.sharepoint.com/:f:/g/personal/f_payan_uniandes_edu_co/El5wNaHx8sJNrEdHqYiCslUBhJ6NzVXRiGUImz4spQVt-A?e=GFWgg5)
-
-
 ### Screenshots
-* Después de cada ejecución se creará una carpeta llamada "screenshots" y dentro de esta, una carpeta con el nombre del escenario. Dentro de esta se generarán las capturas de pantalla por cada paso de la prueba.
-
-    Ejemplo para el escenario "E12":
-    - screenshots
-        - E12_paginas
-            - E12 (1).png
 
 * Kraken seguirá exportando sus screenshots por defecto en la carpeta de `reports`. Estas imágenes seguirán conservando el nombre de la imagen con un número consecutivo aleatorio basado en la fecha.
