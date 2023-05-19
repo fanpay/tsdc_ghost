@@ -5,6 +5,7 @@
     "PASSWORD": "Testing1234567890.",
 
     "LNK_POSTS": "http://localhost:3002/ghost/#/posts",
+    "LNK_TAGS": "http://localhost:3002/ghost/#/tags",
 
     "BTN_SIGNIN_EID": "(//button[contains(@class,'js-login-button')])[1]",
 
@@ -25,6 +26,14 @@
     "SPECIFIC_POST_BY_TITLE": "(//a[contains(@class,'gh-post-list-title')]//h3[contains(., '#TEXT')])",
     
     "LNK_DELETE_POST": ".settings-menu-delete-button",
-    "BTN_CONFIRM_DELETE": "(//button[contains(@class,'gh-btn-red')])[1]"
+    "BTN_CONFIRM_DELETE": "(//button[contains(@class,'gh-btn-red')])[1]",
+
+    "BTN_NEW_TAG":"(//a[contains(@class,'gh-btn')])",
+    "TEXTAREA_DESCRIPTION_TAG": "#tag-description",
+    "BTN_SAVE_TAG": "(//button[contains(@class,'gh-btn-primary')])[1]",
+    "ERROR_DESCRIPTION_TAG": "Description cannot be longer than 500 characters.",
+    "ERROR_P_DESCRIPTION_TAG": "(//textarea[@id='tag-description'])/following-sibling::p[@class='response']"
+
+
     
   }

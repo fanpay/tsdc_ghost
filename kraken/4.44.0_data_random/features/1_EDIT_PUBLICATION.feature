@@ -1,7 +1,7 @@
 Feature: Editar publicación
 
 @user80 @web
-Scenario: Como un usuario inicio sesión, accedo a una publicación previamente creada, la edito y se guardan los cambios correctamente
+Scenario: Como un usuario inicio sesión, voy a la sección de POSTs y creo un POST con datos aleatorios a priori. Luego, accedo a la publicación previamente creada, la edito con más datos aleatorios y se guardan los cambios correctamente
 
     Given For scenario "E100", I login in ghost using credentials with username "<USERNAME>" and password "<PASSWORD>"
     Then I create a new post with title "$name_1" and content "$string_1"

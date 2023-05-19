@@ -3,6 +3,7 @@ const assert = require('assert');
 const GhostPage = require('./GhostPage');
 
 const properties = require('../../../properties.json');
+const kraken_random_data = require('../../../kraken_data.json');
 
 
 let page;
@@ -85,21 +86,6 @@ Given('For scenario {kraken-string}, I login in ghost using credentials with use
 });
 
 
-Given('I change my old password {kraken-string} in staff section with my new password {kraken-string}', async function(old_pwd, new_pwd) {
-    await page.load('http://localhost:2368/ghost/#/staff');
-    await page.click(properties.ACTIVE_USER_OWNER_STAFF);
-    await page.wait(2);
-    await page.set_text(properties.OLD_PASSWORD_INPUT_STAFF, old_pwd);
-    await page.wait(2);
-    await page.set_text(properties.NEW_PASSWORD_INPUT_STAFF, new_pwd);
-    await page.set_text(properties.NEW_PASSWORD_VERIFICATION_INPUT_STAFF, new_pwd);
-    await page.wait(2);
-    await page.click(properties.CHANGE_PASSWORD_BUTTON);
-    await page.wait(2);
-    await page.click(properties.NOTIFICATION_CLOSE_POPUP);
-    await page.wait(2);
-});
-
 
 When('Sign out from ghost session', async function() {
   page = new GhostPage(this.driver);
@@ -112,13 +98,43 @@ When('Delete first publication created with title {kraken-string}', async functi
 });
 
 When('I create a new post with title {kraken-string} and content {kraken-string}', async function(title, content) {
-  await page.create_post(title, content);
+    await page.create_post(title, content);
 });
 
-When('I create a new post in draft status with title {kraken-string} and content {kraken-string}', async function(title, content) {
-  await page.create_draft(title, content);
+
+
+When('I test pseudo data on element with xpath {kraken-string} with error {kraken-string} expected errors', {timeout: 10 * 10000}, async function (xpath, errorXpath) {
+  var mydata = JSON.parse(JSON.stringify(kraken_random_data));  
+  
+  for (let item of mydata) {   
+      let element = await this.driver.$(xpath);
+      await element.setValue(item.OVERFLOWED_TITLE);
+
+      await page.wait(1);
+      let elementSaveTag = await this.driver.$(properties.BTN_SAVE_TAG);
+      await elementSaveTag.click();
+
+      if(!await this.driver.$(errorXpath)){
+          throw "El resultado no fue lo esperado";
+      }
+  }
+  return true;
 });
 
-When('Delete first draft publication created with title {kraken-string}', async function(title) {
-  await page.delete_first_draft(title);
+When('I test pseudo data on element with xpath {kraken-string} with error {kraken-string} expected success', {timeout: 10 * 10000}, async function (xpath, errorXpath) {
+  var mydata = JSON.parse(JSON.stringify(kraken_random_data));  
+  
+  for (let item of mydata) {   
+      let element = await this.driver.$(xpath);
+      await element.setValue(item.TAG_NAME);
+
+      await page.wait(1);
+      let elementSaveTag = await this.driver.$(properties.BTN_SAVE_TAG);
+      await elementSaveTag.click();
+
+      if(await this.driver.$(errorXpath)){
+          throw "El resultado no fue lo esperado";
+      }
+  }
+  return true;
 });
