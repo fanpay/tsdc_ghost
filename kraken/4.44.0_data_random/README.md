@@ -2,10 +2,22 @@
 
 Se deben adaptar las nuevas credenciales de autenticación dependiendo del usuario creado en la instalación de GHOST de su propia máquina. Esto se hace en el archivo [properties](https://github.com/fanpay/tsdc_ghost/blob/main/kraken/4.44.0_data_random/properties.json) y las variables a editar serían:
 
-    "USERNAME": "f.payan@uniandes.edu.co",
-    "PASSWORD": "Testing123456789.",
+    "USERNAME": "test@test.com",
+    "PASSWORD": "Testing1234567890.",
 
 *No olvide colocar las credenciales que usted usa en su instalación de Ghost.*    
+
+## Estrategias de generación de datos aleatorios usados y uso en los escenarios de pruebas
+
+* Estrategia pool de datos a-priori
+Para las pruebas del modulo de pages y tags se utilizaron datos a priori para validar los escenarios exitosos. Para esto se dejaron escritos dichos datos en la ejecución de cada prueba a priori. En el titulo de cada prueba hecha en pages y tags se menciona si la prueba contiene datos a priori.
+
+* Estrategia pool de datos (pseudo) aleatorio dinámico
+Para la generación de pruebas aleatorias dinámicas, en pages y tags se utiliza faker para la construcción de dos tipos de escenarios. El primer escenario es hacer pruebas con datos dinamicos dentro de las fronteras del campo a evaluar, por ejemplo si el campo a evaluar es un input tipo texto cuya frontera superior es de 300 caracteres, se generan datos con faker en este rango de caracteres. El segundo escenario es similar al anterior con la diferencia de que se generan datos aleatorios fuera de la frontera, por ejemplo si el elemento a evaluar es un input tipo fecha cuya frontera inferior es la fecha actual, se generan datos aleatorios con fechas inferiores a la actual. En el titulo de cada prueba hecha en pages y tags se menciona si la prueba contiene datos a Pseudo aleatorio dinámico y ademas si la prueba genera datos dentro o fuera de las fronteras.
+
+* Estrategia escenario aleatorio
+Para la generación de pruebas aleatorias se utiliza faker en todos los campos campos, ingresando datos totalmente aleatorios según el tipo de campo sin limitar ninguna de las fronteras. En el titulo de cada prueba hecha en pages y tags se menciona si la prueba contiene datos aleatorio.
+
 
 ## Precondiciones
 
@@ -22,7 +34,8 @@ Para ejecutar los escenarios [mencionados anteriormente](https://github.com/fanp
 > El aplicativo GHOST bajo pruebas debe estar en ejecución. 
 
 1. Descargar [este](https://github.com/fanpay/tsdc_ghost) repositorio.
-2. Abrir una terminal en su máquina e ir a la carpeta `pruebas_kraken`
+2. Abrir una terminal en su máquina e ir a la carpeta `kraken`
+3. Luego ir a la carpeta `4.44.0_data_random`
 3. Debemos instalar el paquete "kraken-node" dentro de nuestra carpeta. Puede utilizar el comando `npm install kraken-node`
 4. Si aún no tiene instalado el paquete `Appium` en su máquina, puede hacerlo con este comando `npm install -g appium`. 
 5. Asegúrese de haber instalado [Android Studio](https://developer.android.com/studio) en su máquina
@@ -31,8 +44,9 @@ Para ejecutar los escenarios [mencionados anteriormente](https://github.com/fanp
         - [Windows](https://linuxhint.com/fix-adb-not-recognize-internal-external-command-windows-10/)
 6. En la terminal, ejcutar el siguiente comando
     `./node_modules/kraken-node/bin/kraken-node run`
-7. Son alrededor de 21 pruebas a ejecutar. Tomará su tiempo.
-8. Encontrará los resultados de la prueba en el directorio `reports` dentro de la carpeta `pruebas-kraken`.
+7. Son alrededor de 3 pruebas a ejecutar.
+8. Encontrará los resultados de la prueba en el directorio `reports` dentro de la carpeta `4.44.0_data_random`.
+
 
 *NOTA*: Puede que al ejecutar tantas pruebas en paralelo, la versión de GHOST no soporte tantas conexiones tan seguidas y muestre el siguiente error: `Too many attempts try again in an hour`
 Para esto, existen dos soluciones diferentes:
