@@ -32,6 +32,7 @@ Visita nuestra wiki [aquí](https://github.com/fanpay/tsdc_ghost/wiki/Resultados
 * Utilización de técnicas para la generación de datos en GHOST **4.44.0**
     *  [Cypress](https://github.com/fanpay/tsdc_ghost/blob/main/cypress/4.44.0_data_random/README.md#estrategias-de-generaci%C3%B3n-de-datos-aleatorios-usados-y-uso-en-los-escenarios-de-pruebas)
     *  [Kraken](https://github.com/fanpay/tsdc_ghost/blob/main/kraken/4.44.0_data_random/README.md#estrategias-de-generaci%C3%B3n-de-datos-aleatorios-usados-y-uso-en-los-escenarios-de-pruebas)
+    *  [Incidencias](https://github.com/fanpay/tsdc_ghost/issues)
 
 ## Listado de 5 funcionalidades bajo pruebas
 
