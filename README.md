@@ -29,6 +29,9 @@ Visita nuestra wiki [aquí](https://github.com/fanpay/tsdc_ghost/wiki/Resultados
 * [Sistema de incidencias](https://github.com/fanpay/tsdc_ghost/issues)
 * [Video explicativo sobre nueva funcionalidad de pantallazos para Cypress Y Kraken](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 * [Video explicativo sobre toma de pantallazos, ejecución de suite de pruebas sobre versión de Ghost 4.44.0 y pruebas de regresión visual(Actividad Semana 6) ](https://youtu.be/dtIm2GfxmG4)
+* Utilización de técnicas para la generación de datos en GHOST 4.44.0
+    *  [Cypress](https://github.com/fanpay/tsdc_ghost/blob/main/cypress/4.44.0_data_random/README.md#estrategias-de-generaci%C3%B3n-de-datos-aleatorios-usados-y-uso-en-los-escenarios-de-pruebas)
+    *  [Kraken](https://github.com/fanpay/tsdc_ghost/blob/main/kraken/4.44.0_data_random/README.md#estrategias-de-generaci%C3%B3n-de-datos-aleatorios-usados-y-uso-en-los-escenarios-de-pruebas)
 
 ## Listado de 5 funcionalidades bajo pruebas
 
@@ -116,6 +119,8 @@ Para ejecutar los escenarios mencionados anteriormente se debe seguir los siguie
 
 [Enlace al proyecto Cypress](https://github.com/fanpay/tsdc_ghost/tree/main/cypress/3.41.1)
 
+[Enlace para utilización de técnicas para la generación de datos en CYPRESS](https://github.com/fanpay/tsdc_ghost/blob/main/cypress/4.44.0_data_random/README.md#estrategias-de-generaci%C3%B3n-de-datos-aleatorios-usados-y-uso-en-los-escenarios-de-pruebas)
+
 ### Kraken
 
 Para ejecutar los escenarios [mencionados anteriormente](https://github.com/fanpay/tsdc_ghost/blob/main/README.md) se deben seguir los siguientes pasos:
@@ -155,6 +160,9 @@ Por favor leer también las [siguientes recomendaciones adicionales](https://git
 * Kraken seguirá exportando sus screenshots por defecto en la carpeta de `reports`. Estas imágenes seguirán conservando el nombre de la imagen con un número consecutivo aleatorio basado en la fecha.
 
 [Enlace al proyecto Kraken](https://github.com/fanpay/tsdc_ghost/tree/main/kraken/3.41.1)
+
+[Enlace para utilización de técnicas para la generación de datos en KRAKEN](https://github.com/fanpay/tsdc_ghost/blob/main/kraken/4.44.0_data_random/README.md#estrategias-de-generaci%C3%B3n-de-datos-aleatorios-usados-y-uso-en-los-escenarios-de-pruebas)
+
 
 ### Evidencias Kraken
 Se adjuntan evidencias de ejecución
