@@ -91,14 +91,3 @@ Para ejecutar los escenarios [mencionados anteriormente](https://github.com/fanp
 9. Para seguir con la ejecución de las pruebas faltantes, en el panel izquierdo encontrará las demás pruebas y basta con dar click y la ejecución iniciará.
 
 
-
-## Estrategias de generación de datos aleatorios usados y uso en los escenarios de pruebas
-
-* Estrategia pool de datos a-priori
-Para las pruebas del modulo de pages y tags se utilizaron datos a priori para validar los escenarios exitosos. Para esto se dejaron escritos dichos datos en la ejecución de cada prueba a priori. En el titulo de cada prueba hecha en pages y tags se menciona si la prueba contiene datos a priori.
-
-* Estrategia pool de datos (pseudo) aleatorio dinámico
-Para la generación de pruebas aleatorias dinámicas, en pages y tags se utiliza faker para la construcción de dos tipos de escenarios. El primer escenario es hacer pruebas con datos dinamicos dentro de las fronteras del campo a evaluar, por ejemplo si el campo a evaluar es un input tipo texto cuya frontera superior es de 300 caracteres, se generan datos con faker en este rango de caracteres. El segundo escenario es similar al anterior con la diferencia de que se generan datos aleatorios fuera de la frontera, por ejemplo si el elemento a evaluar es un input tipo fecha cuya frontera inferior es la fecha actual, se generan datos aleatorios con fechas inferiores a la actual. En el titulo de cada prueba hecha en pages y tags se menciona si la prueba contiene datos a Pseudo aleatorio dinámico y ademas si la prueba genera datos dentro o fuera de las fronteras.
-
-* Estrategia escenario aleatorio
-Para la generación de pruebas aleatorias se utiliza faker en todos los campos campos, ingresando datos totalmente aleatorios según el tipo de campo sin limitar ninguna de las fronteras. En el titulo de cada prueba hecha en pages y tags se menciona si la prueba contiene datos aleatorio.
