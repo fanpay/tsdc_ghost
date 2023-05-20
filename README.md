@@ -29,7 +29,7 @@ Visita nuestra wiki [aquí](https://github.com/fanpay/tsdc_ghost/wiki/Resultados
 * [Sistema de incidencias](https://github.com/fanpay/tsdc_ghost/issues)
 * [Video explicativo sobre nueva funcionalidad de pantallazos para Cypress Y Kraken](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 * [Video explicativo sobre toma de pantallazos, ejecución de suite de pruebas sobre versión de Ghost 4.44.0 y pruebas de regresión visual(Actividad Semana 6) ](https://youtu.be/dtIm2GfxmG4)
-* Utilización de técnicas para la generación de datos en GHOST 4.44.0
+* Utilización de técnicas para la generación de datos en GHOST **4.44.0**
     *  [Cypress](https://github.com/fanpay/tsdc_ghost/blob/main/cypress/4.44.0_data_random/README.md#estrategias-de-generaci%C3%B3n-de-datos-aleatorios-usados-y-uso-en-los-escenarios-de-pruebas)
     *  [Kraken](https://github.com/fanpay/tsdc_ghost/blob/main/kraken/4.44.0_data_random/README.md#estrategias-de-generaci%C3%B3n-de-datos-aleatorios-usados-y-uso-en-los-escenarios-de-pruebas)
 
