@@ -7,6 +7,8 @@ Se deben adaptar las nuevas credenciales de autenticación dependiendo del usuar
 
 **No olvide colocar las credenciales que usted usa en su instalación de Ghost.**    
 
+**LA VERSIÓN DE GHOST UTILIZADA PARA LAS PRUEBAS ES LA VERSIÓN 4.44.0**
+
 ## Estrategias de generación de datos aleatorios usados y uso en los escenarios de pruebas
 
 ### Explicación estructura de nombramiento de los escenarios.
