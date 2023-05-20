@@ -11,6 +11,8 @@ Se deben adaptar las nuevas credenciales de autenticación dependiendo del usuar
 
 ### Explicación estructura de nombramiento de los escenarios.
 
+> TEST_S{IdEscenario} _ T{número de pruebas en el archivo} _ {nombre funcionalidad}.spec.cy.js
+
 > TEST_S03_T30_page.spec.cy.js
 
 * **TEST:** Nombre inicial del archivo.
