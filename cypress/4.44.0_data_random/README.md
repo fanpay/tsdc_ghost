@@ -18,6 +18,8 @@ Se deben adaptar las nuevas credenciales de autenticación dependiendo del usuar
 * **T30:** Total cantidad de pruebas dentro del archivo.
 * **page:** Funcionalidad probada. Ej: page, tags, members, etc.
 
+Total de pruebas en cypress: **91**
+
 ### Estrategias usadas:
 
 * **Pool de datos a-priori:**
