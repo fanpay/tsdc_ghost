@@ -7,6 +7,60 @@ Se deben adaptar las nuevas credenciales de autenticación dependiendo del usuar
 
 **No olvide colocar las credenciales que usted usa en su instalación de Ghost.**    
 
+## Estrategias de generación de datos aleatorios usados y uso en los escenarios de pruebas
+
+### Explicación estructura de nombramiento de los escenarios.
+
+> TEST_S03_T30_page.spec.cy.js
+
+* **TEST:** Nombre inicial del archivo.
+* **S03:** Consecutivo para indicar el número de escenario.
+* **T30:** Total cantidad de pruebas dentro del archivo.
+* **page:** Funcionalidad probada. Ej: page, tags, members, etc.
+
+### Estrategias usadas:
+
+* **Pool de datos a-priori:**
+
+    Se han utilizado datos a-prior para validar escenarios exitosos en los siguientes módulos:
+    
+    - **[Páginas (pages)](https://github.com/fanpay/tsdc_ghost/blob/main/cypress/4.44.0_data_random/cypress/e2e/TEST_S03_T30_page.spec.cy.js)**
+    - **[Etiquetas (tags)](https://github.com/fanpay/tsdc_ghost/blob/main/cypress/4.44.0_data_random/cypress/e2e/TEST_S05_T31.spec_tags.cy.js)**
+    - **[Inicio de sesión (login)](https://github.com/fanpay/tsdc_ghost/blob/main/cypress/4.44.0_data_random/cypress/e2e/TEST_S01_T07_login.spec.cy.js)**
+
+    Para esto, se escribieron estos datos en la ejecución de cada prueba a-priori. En la descripción de cada prueba hecha, se indica si la prueba contiene datos a-priori con la palabra "*a-prior*" o "*a priori*".
+
+* **Pool de datos *pseudo-aleatorio* dinámico:**
+
+    Para estos escenarios, se han utilizado los siguientes módulos:
+    
+    * **[Páginas (pages)](https://github.com/fanpay/tsdc_ghost/blob/main/cypress/4.44.0_data_random/cypress/e2e/TEST_S03_T30_page.spec.cy.js)**
+    * **[Etiquetas (tags)](https://github.com/fanpay/tsdc_ghost/blob/main/cypress/4.44.0_data_random/cypress/e2e/TEST_S05_T31.spec_tags.cy.js)**
+    * **[Inicio de sesión (login)](https://github.com/fanpay/tsdc_ghost/blob/main/cypress/4.44.0_data_random/cypress/e2e/TEST_S01_T07_login.spec.cy.js)**
+    
+    Se ha utilizado *faker* para la construcción de dos tipos de escenarios:
+    - **Primer escenario:** Hacer pruebas con datos dinámicos dentro de las fronteras del campo a evaluar. Ejemplo:
+        - Si el campo a evaluar es un *input* tipo texto cuya frontera superior es de 300 caracteres, se generan datos con faker en este rango de caracteres. 
+    - **Segundo escenario:** Es similar al anterior cuya diferencia radica en que se generan datos aleatorios fuera de la frontera. Ejemplo:
+        - Si el elemento a evaluar es un *input* tipo fecha cuya frontera inferior es la fecha actual, se generan datos aleatorios con fechas inferiores a la actual. 
+        
+     En la descripción de cada prueba, se menciona si la prueba contiene datos a pseudo-aleatorios dinámicos y además, si la prueba genera datos dentro o fuera de los límites (fronteras).
+     Para identificar los escenarios que contienen las pruebas con datos pseudo-aleatorios, en su descripción aparece la palabra "*pseudo*".
+
+* **Escenario con datos aleatorios:**
+
+    Para estos escenarios, se ha utilizado faker en todos los campos, ingresando datos totalmente aleatorios según el tipo de campo sin limitar ninguna de las fronteras. 
+
+    - Módulos involucrados:
+        - **[Registrarse (sign-up)](https://github.com/fanpay/tsdc_ghost/blob/main/cypress/4.44.0_data_random/cypress/e2e/TEST_S04_T05_signup.spec.cy.js)**
+        - **[Miembros (members)](https://github.com/fanpay/tsdc_ghost/blob/main/cypress/4.44.0_data_random/cypress/e2e/TEST_S02_T18_members.spec.cy.js)**
+        - **[Inicio de sesión (login)](https://github.com/fanpay/tsdc_ghost/blob/main/cypress/4.44.0_data_random/cypress/e2e/TEST_S01_T07_login.spec.cy.js)**
+
+    En la descripción de cada prueba de los módulos mencionados, se menciona si la prueba contiene datos aleatorios. En su descripción aparece la palabra "random". Ejemplo:
+    - *invalid email to sign in, **random*** 
+
+Para los escenarios se han considerado escenarios positivos y negativos.
+
 ## Precondiciones
 
 * Tener instalado [NodeJS 16](https://nodejs.org/en/blog/release/v16.20.0) 
