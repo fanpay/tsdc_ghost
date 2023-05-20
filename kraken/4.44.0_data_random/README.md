@@ -7,22 +7,7 @@ Se deben adaptar las nuevas credenciales de autenticación dependiendo del usuar
 
 *No olvide colocar las credenciales que usted usa en su instalación de Ghost.*    
 
-## Estrategias de generación de datos aleatorios usados y uso en los escenarios de pruebas
-
-* Pool de datos a-priori
-Se han utilizado datos a-prior para validar escenarios exitosos en los siguientes módulos.
-    * [Publicaciones (publications)](https://github.com/fanpay/tsdc_ghost/blob/main/kraken/4.44.0_data_random/features/1_EDIT_PUBLICATION.feature)
-    * [Etiquetas (tags)] (https://github.com/fanpay/tsdc_ghost/blob/main/kraken/4.44.0_data_random/features/2_CREATE_TAG.feature)
-
-    Para esto, se escribieron estos datos en la ejecución de cada prueba a-priori. *En el titulo de cada prueba hecha en páginas(tags) y etiquetas(tags) se indica si la prueba contiene datos a-priori*.
-
-* Pool de datos *pseudo-aleatorio* dinámico
-Para la generación de pruebas aleatorias dinámicas, en pages y tags se utiliza faker para la construcción de dos tipos de escenarios. El primer escenario es hacer pruebas con datos dinamicos dentro de las fronteras del campo a evaluar, por ejemplo si el campo a evaluar es un input tipo texto cuya frontera superior es de 300 caracteres, se generan datos con faker en este rango de caracteres. El segundo escenario es similar al anterior con la diferencia de que se generan datos aleatorios fuera de la frontera, por ejemplo si el elemento a evaluar es un input tipo fecha cuya frontera inferior es la fecha actual, se generan datos aleatorios con fechas inferiores a la actual. En el titulo de cada prueba hecha en pages y tags se menciona si la prueba contiene datos a Pseudo aleatorio dinámico y ademas si la prueba genera datos dentro o fuera de las fronteras.
-
-* Escenario con datos aleatorios
-Para la generación de pruebas aleatorias se utiliza faker en todos los campos campos, ingresando datos totalmente aleatorios según el tipo de campo sin limitar ninguna de las fronteras. 
-En el titulo de cada prueba hecha en pages y tags se menciona si la prueba contiene datos aleatorio.
-
+**LA VERSIÓN DE GHOST UTILIZADA PARA LAS PRUEBAS ES LA VERSIÓN 4.44.0**
 
 ## Precondiciones
 
@@ -63,3 +48,27 @@ Para esto, existen dos soluciones diferentes:
 ## Screenshots
 
 * Kraken seguirá exportando sus screenshots por defecto en la carpeta de `reports`. Estas imágenes seguirán conservando el nombre de la imagen con un número consecutivo aleatorio basado en la fecha.
+
+
+## Estrategias de generación de datos aleatorios usados y uso en los escenarios de pruebas
+
+Total de pruebas en Kraken: **2**
+
+### Estrategias usadas:
+
+* **Pool de datos *pseudo-aleatorio* dinámico:**
+
+    Para estos escenarios, se han utilizado los siguientes módulos:
+    
+    * **[Etiquetas (tags)](https://github.com/fanpay/tsdc_ghost/blob/main/kraken/4.44.0_data_random/features/2_CREATE_TAG.feature)**
+    
+    Se ha utilizado [*mockaroo*](https://mockaroo.com/schemas/530469) para generar un [grupo de datos](https://mockaroo.com/datasets/264642) en la prueba. Se prueban diferentes campos de diferentes longitudes en la descripción de un tag.
+
+
+* **Escenario con datos aleatorios:**
+
+    Para estos escenarios, se ha utilizado faker en todos los campos, ingresando datos totalmente aleatorios según el tipo de campo sin limitar fronteras para crear una publicación
+
+    - **[Publicaciones (publications)](https://github.com/fanpay/tsdc_ghost/blob/main/kraken/4.44.0_data_random/features/1_EDIT_PUBLICATION.feature)** 
+
+
