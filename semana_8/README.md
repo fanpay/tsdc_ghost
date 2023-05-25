@@ -23,7 +23,7 @@ Visita nuestra wiki [aquí](https://github.com/fanpay/tsdc_ghost/wiki#entrega-se
 * [Inventario de pruebas exploratorias manuales](https://uniandes-my.sharepoint.com/:x:/g/personal/f_payan_uniandes_edu_co/EVhFKdzAtXhDvKFNyeN-snQBeZ3FqfAz-okdvTgpSpB5OQ?e=kUyPk3)
 * [Pruebas de reconocimiento automatizadas](https://github.com/fanpay/tsdc_ghost/tree/main/semana_8/pruebas_reconocimiento)
 * [Pruebas E2E](https://github.com/fanpay/tsdc_ghost/tree/main/semana_8/pruebas_e2e)
-* [Pruebas VTR](https://github.com/fanpay/tsdc_ghost/tree/main/semana_8/pruebas_vrt)
+* [Pruebas VRT](https://github.com/fanpay/tsdc_ghost/tree/main/semana_8/pruebas_vrt/script_vrt)
 * [Pruebas de escenarios con validación](https://github.com/fanpay/tsdc_ghost/tree/main/semana_8/pruebas_validacion_datos)
 * [Sistema de incidencias](https://github.com/fanpay/tsdc_ghost/issues)
 
