@@ -1,6 +1,6 @@
 # RECOMENDACIONES IMPORTANTES
 
-Se deben adaptar las nuevas credenciales de autenticación dependiendo del usuario creado en la instalación de GHOST de su propia máquina. Esto se hace en el archivo de [configuración](https://github.com/fanpay/tsdc_ghost/tree/main/semana_8/cypress/3.41.1/cypress.config.js) y las variables a editar serían:
+Se deben adaptar las nuevas credenciales de autenticación dependiendo del usuario creado en la instalación de GHOST de su propia máquina. Esto se hace en el archivo de [configuración](https://github.com/fanpay/tsdc_ghost/blob/main/semana_8/pruebas_reconocimiento/cypress/3.41.1/cypress.config.js) y las variables a editar serían:
 
     email: "user@email.com",
     password: "Qwertyuiop",
@@ -18,7 +18,7 @@ Se deben adaptar las nuevas credenciales de autenticación dependiendo del usuar
 
 ### Cypress
 
-Para ejecutar los escenarios [mencionados anteriormente](https://github.com/fanpay/tsdc_ghost/blob/main/semana_8/README.md) se deben seguir los siguientes pasos:
+Para ejecutar los escenarios [mencionados anteriormente](https://github.com/fanpay/tsdc_ghost/blob/main/semana_8/README.md#listado-de-escenarios-de-pruebas) se deben seguir los siguientes pasos:
 
 > El aplicativo GHOST bajo pruebas debe estar en ejecución. 
 
