@@ -2,7 +2,7 @@
 
 ### Cypress
 
-Para ejecutar los escenarios [mencionados anteriormente](https://github.com/fanpay/tsdc_ghost/tree/main/semana_8#listado-de-21-escenarios-de-pruebas) se debe seguir los siguientes pasos:
+Para ejecutar los escenarios [mencionados anteriormente](https://github.com/fanpay/tsdc_ghost/blob/main/semana_8/README.md#listado-de-escenarios-de-pruebas) se debe seguir los siguientes pasos:
 
 > El aplicativo GHOST bajo pruebas debe estar en ejecución. 
 
@@ -19,7 +19,7 @@ Para ejecutar los escenarios [mencionados anteriormente](https://github.com/fanp
 
 ### Kraken
 
-Para ejecutar los escenarios [mencionados anteriormente](https://github.com/fanpay/tsdc_ghost/tree/main/semana_8#listado-de-21-escenarios-de-pruebas) se deben seguir los siguientes pasos:
+Para ejecutar los escenarios [mencionados anteriormente](https://github.com/fanpay/tsdc_ghost/blob/main/semana_8/README.md#listado-de-escenarios-de-pruebas) se deben seguir los siguientes pasos:
 
 > El aplicativo GHOST bajo pruebas debe estar en ejecución. 
 
