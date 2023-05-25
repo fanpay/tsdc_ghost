@@ -21,9 +21,9 @@ Visita nuestra wiki [aquí](https://github.com/fanpay/tsdc_ghost/wiki/Resultados
 
 * [Estrategia de pruebas final]()
 * [Inventario de pruebas exploratorias manuales](https://uniandes-my.sharepoint.com/:x:/g/personal/f_payan_uniandes_edu_co/EVhFKdzAtXhDvKFNyeN-snQBeZ3FqfAz-okdvTgpSpB5OQ?e=kUyPk3)
-* [Pruebas de reconocimiento automatizadas]()
+* [Pruebas de reconocimiento automatizadas](https://github.com/fanpay/tsdc_ghost/tree/main/semana_8/cypress/3.41.1)
 * [Pruebas E2E]()
-* [Pruebas VTR]()
+* [Pruebas VTR](https://github.com/fanpay/tsdc_ghost/tree/main/semana_8/script_vrt)
 * [Sistema de incidencias](https://github.com/fanpay/tsdc_ghost/issues)
 
 
@@ -105,10 +105,6 @@ Para ejecutar los escenarios mencionados anteriormente se debe seguir los siguie
 9. Para seguir con la ejecución de las pruebas faltantes, en el panel izquierdo encontrará las demás pruebas y basta con dar click y la ejecución iniciará.
 
 
-[Enlace al proyecto Cypress](https://github.com/fanpay/tsdc_ghost/tree/main/cypress/3.41.1)
-
-[Enlace para utilización de técnicas para la generación de datos en CYPRESS](https://github.com/fanpay/tsdc_ghost/blob/main/cypress/4.44.0_data_random/README.md#estrategias-de-generaci%C3%B3n-de-datos-aleatorios-usados-y-uso-en-los-escenarios-de-pruebas)
-
 ### Kraken
 
 Para ejecutar los escenarios [mencionados anteriormente](https://github.com/fanpay/tsdc_ghost/blob/main/README.md) se deben seguir los siguientes pasos:
@@ -136,26 +132,6 @@ Para esto, existen dos soluciones diferentes:
 
 Por favor leer también las [siguientes recomendaciones adicionales](https://github.com/fanpay/tsdc_ghost/blob/main/pruebas_kraken/README.md)
 
-### Screenshots Kraken
-
-* Después de cada ejecución se creará una carpeta llamada "screenshots" y dentro de esta, una carpeta con el nombre del escenario. Dentro de esta se generarán las capturas de pantalla por cada paso de la prueba.
-
-    Ejemplo para el escenario "E12":
-    - screenshots
-        - E12_paginas
-            - E12 (1).png
-
-* Kraken seguirá exportando sus screenshots por defecto en la carpeta de `reports`. Estas imágenes seguirán conservando el nombre de la imagen con un número consecutivo aleatorio basado en la fecha.
-
-[Enlace al proyecto Kraken](https://github.com/fanpay/tsdc_ghost/tree/main/kraken/3.41.1)
-
-[Enlace para utilización de técnicas para la generación de datos en KRAKEN](https://github.com/fanpay/tsdc_ghost/blob/main/kraken/4.44.0_data_random/README.md#estrategias-de-generaci%C3%B3n-de-datos-aleatorios-usados-y-uso-en-los-escenarios-de-pruebas)
-
-
-### Evidencias Kraken
-Se adjuntan evidencias de ejecución
-- Archivo [zip](https://uniandes-my.sharepoint.com/:u:/g/personal/f_payan_uniandes_edu_co/ES7xQOLmYS1Pmu-QpKqBWIUBDvZKQeAAtL0tdUn5foygSg?e=IrPiTS)
-- [Folder completo](https://uniandes-my.sharepoint.com/:f:/g/personal/f_payan_uniandes_edu_co/El5wNaHx8sJNrEdHqYiCslUBhJ6NzVXRiGUImz4spQVt-A?e=GFWgg5)
 
 ## Colaboradores
 
