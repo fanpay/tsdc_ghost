@@ -1,5 +1,5 @@
 # GHOST v3.41.1
-Repositorio creado para reportar incidencias del proyecto GHOST para The Software Design Company (TSDC)
+Repositorio creado para estrategia final de pruebas para el proyecto GHOST enfocado en el cliente The Software Design Company (TSDC)
 
 
 ## Precondiciones
@@ -15,15 +15,16 @@ Repositorio creado para reportar incidencias del proyecto GHOST para The Softwar
 
 ## Wiki
 
-Visita nuestra wiki [aquí](https://github.com/fanpay/tsdc_ghost/wiki/Resultados-de-pruebas-autom%C3%A1ticas)
+Visita nuestra wiki [aquí](https://github.com/fanpay/tsdc_ghost/wiki#entrega-semana-8)
 
 ## Nuestro contenido:
 
 * [Estrategia de pruebas final]()
 * [Inventario de pruebas exploratorias manuales](https://uniandes-my.sharepoint.com/:x:/g/personal/f_payan_uniandes_edu_co/EVhFKdzAtXhDvKFNyeN-snQBeZ3FqfAz-okdvTgpSpB5OQ?e=kUyPk3)
-* [Pruebas de reconocimiento automatizadas](https://github.com/fanpay/tsdc_ghost/tree/main/semana_8/cypress/3.41.1)
-* [Pruebas E2E]()
-* [Pruebas VTR](https://github.com/fanpay/tsdc_ghost/tree/main/semana_8/script_vrt)
+* [Pruebas de reconocimiento automatizadas](https://github.com/fanpay/tsdc_ghost/tree/main/semana_8/pruebas_reconocimiento)
+* [Pruebas E2E](https://github.com/fanpay/tsdc_ghost/tree/main/semana_8/pruebas_e2e)
+* [Pruebas VTR](https://github.com/fanpay/tsdc_ghost/tree/main/semana_8/pruebas_vrt)
+* [Pruebas de escenarios con validación](https://github.com/fanpay/tsdc_ghost/tree/main/semana_8/pruebas_validacion_datos)
 * [Sistema de incidencias](https://github.com/fanpay/tsdc_ghost/issues)
 
 
@@ -85,52 +86,6 @@ Si hasta ahora se encuentra realizando sus primeros pasos en su sitio o no tiene
 |E19| Como un usuario inicio sesión, voy a ir a la sección “PUBLICATION IDENTITY” en “General”,  y eliminaré el logo. Posterior a esto, voy a ir a la sección principal y verificar que los cambios se hicieron con éxito. |5| Johana Ojeda|
 |E20| Como un usuario inicio sesión, voy a la sección de Design, ubicarse en la parte de "Navigation", dejar vacío el primer label y guardar cambios. Debe aparecer un mensaje de error en rojo diciendo "You must specify a label" y el botón de guardado debe estar de color rojo y tener un texto que diga "Retry". Luego ir a la página principal, verificar el menú principal y no debe existir la opción que se intentó crear. Por último, se cierra la sesión. (escenario negativo). |5| Fabián Payan|
 |E21| Como un usuario inicio sesión, me dirijo a la sección “Labs” ubicada en General y la selecciono, ubico la opción _Night shift_ la selecciono para que cambie y me dirijo a las secciones: Posts, Pages, Tags, Staf, General, Design, Code injection, Integrations y Labs y observo que el fondo de cada sección corresponde al tema oscuro de GHost (rgb(38, 50, 56)) | 5 | Esneider Velandia |
-
-## Instrucciones para ejecutar los escenarios.
-
-### Cypress
-
-Para ejecutar los escenarios mencionados anteriormente se debe seguir los siguientes pasos:
-
-> El aplicativo GHOST bajo pruebas debe estar en ejecución. 
-
-1. Descargar este repositorio, identifique la carpeta `prubas_cypress`, ingrese y abra el archivo `cypress.config.js` en su editor de texto favorito y configure las variables que tienen por nombre `email` y `password` con los datos del usuario que tiene rol `OWNER` dentro de su aplicativo GHOST y guarde los cambios.
-2. Abrir una terminal y ejecutar el comando `cypress open` .
-3. Seleccionar la opción `Add proyect` .
-4. En el panel que se despliega dar click para buscar en el explorador de archivos la ubicación donde descargo este repositorio y seleccionar la carpeta `pruebas_cypress`.
-5. Ahora, en el nuevo panel seleccionar la opción `E2E Testing`.
-6. En el panel `Choose a browser` seleccione la opción `Chrome` y continue con la opción `Start E2E Testing in Chrome`
-7. Se abrirá un navegador Chrome con el aplicativo de Cypress en la opción `Specs` bajo el folder `cypress/e2e` con un listado de 21 escenarios de pruebas. Los escenarios llevan por nombre el siguiente formato: `E{IdEscenario}_{nombre-funcionalidad}.spec.cy.js`, para un mayor control y facilidad de reconocimiento.
-8. Seleccione el escenario a probar y automáticamente la prueba empieza a ejecutarse.
-9. Para seguir con la ejecución de las pruebas faltantes, en el panel izquierdo encontrará las demás pruebas y basta con dar click y la ejecución iniciará.
-
-
-### Kraken
-
-Para ejecutar los escenarios [mencionados anteriormente](https://github.com/fanpay/tsdc_ghost/blob/main/README.md) se deben seguir los siguientes pasos:
-
-> El aplicativo GHOST bajo pruebas debe estar en ejecución. 
-
-1. Descargar [este](https://github.com/fanpay/tsdc_ghost) repositorio.
-2. Abrir una terminal en su máquina e ir a la carpeta `semana_8/kraken/3.41.1`
-3. Debemos instalar el paquete "kraken-node" dentro de nuestra carpeta. Puede utilizar el comando `npm install kraken-node`
-4. Si aún no tiene instalado el paquete `Appium` en su máquina, puede hacerlo con este comando `npm install -g appium`. 
-5. Asegúrese de haber instalado [Android Studio](https://developer.android.com/studio) en su máquina
-    - También de haber refrescado las variables de entorno del sistema
-        - [MAC](https://dev.to/ravics09/solution-of-command-not-found-adb-error-29e7)
-        - [Windows](https://linuxhint.com/fix-adb-not-recognize-internal-external-command-windows-10/)
-6. En la terminal, ejcutar el siguiente comando
-    `./node_modules/kraken-node/bin/kraken-node run`
-7. Son alrededor de 21 pruebas a ejecutar. Tomará su tiempo.
-8. Encontrará los resultados de la prueba en el directorio `reports` dentro de la carpeta `semana_8/kraken/3.41.1`.
-
-*NOTA*: Puede que al ejecutar tantas pruebas en paralelo, la versión de GHOST no soporte tantas conexiones tan seguidas y muestre el siguiente error: `Too many attempts try again in an hour`
-Para esto, existen dos soluciones diferentes:
-- Puede modificar algunas variables de entorno de su instalación de GHOST. Este [post](https://forum.ghost.org/t/disable-too-many-attempts-try-again-in-an-hour/4087/2) puede ayudarle a solucionarlo. 
-- También puede [entrar a la base de datos de Ghost](https://codehangar.io/viewing-local-ghost-database-sqlite-db-files/) y ejecutar el siguiente comando:
-    - `delete from brute;`
-
-Por favor leer también las [siguientes recomendaciones adicionales](https://github.com/fanpay/tsdc_ghost/blob/main/pruebas_kraken/README.md)
 
 
 ## Colaboradores
