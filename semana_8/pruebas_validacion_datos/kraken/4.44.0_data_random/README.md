@@ -1,6 +1,6 @@
 # RECOMENDACIONES IMPORTANTES
 
-Se deben adaptar las nuevas credenciales de autenticación dependiendo del usuario creado en la instalación de GHOST de su propia máquina. Esto se hace en el archivo [properties](https://github.com/fanpay/tsdc_ghost/blob/main/kraken/4.44.0_data_random/properties.json) y las variables a editar serían:
+Se deben adaptar las nuevas credenciales de autenticación dependiendo del usuario creado en la instalación de GHOST de su propia máquina. Esto se hace en el archivo [properties](https://github.com/fanpay/tsdc_ghost/blob/main/semana_8/pruebas_validacion_datos/kraken/4.44.0_data_random/properties.json) y las variables a editar serían:
 
     "USERNAME": "test@test.com",
     "PASSWORD": "Testing1234567890.",
@@ -19,11 +19,11 @@ Se deben adaptar las nuevas credenciales de autenticación dependiendo del usuar
 
 ## Kraken
 
-Para ejecutar los escenarios [mencionados anteriormente](https://github.com/fanpay/tsdc_ghost/blob/main/README.md) se deben seguir los siguientes pasos:
+Para ejecutar los escenarios [mencionados anteriormente](https://github.com/fanpay/tsdc_ghost/blob/main/semana_8/README.md#listado-de-escenarios-de-pruebas) se deben seguir los siguientes pasos:
 
 > El aplicativo GHOST bajo pruebas debe estar en ejecución. 
 
-1. Descargar [este](https://github.com/fanpay/tsdc_ghost) repositorio.
+1. Descargar [este](https://github.com/fanpay/tsdc_ghost/tree/main/semana_8/pruebas_validacion_datos/kraken/4.44.0_data_random) repositorio.
 2. Abrir una terminal en su máquina e ir a la carpeta `kraken`
 3. Luego ir a la carpeta `4.44.0_data_random`
 3. Debemos instalar el paquete "kraken-node" dentro de nuestra carpeta. Puede utilizar el comando `npm install kraken-node`
@@ -60,7 +60,7 @@ Total de pruebas en Kraken: **2**
 
     Para estos escenarios, se han utilizado los siguientes módulos:
     
-    * **[Etiquetas (tags)](https://github.com/fanpay/tsdc_ghost/blob/main/kraken/4.44.0_data_random/features/2_CREATE_TAG.feature)**
+    * **[Etiquetas (tags)](https://github.com/fanpay/tsdc_ghost/blob/main/semana_8/pruebas_validacion_datos/kraken/4.44.0_data_random/features/2_CREATE_TAG.feature)**
     
     Se ha utilizado [*mockaroo*](https://mockaroo.com/schemas/530469) para generar un [grupo de datos](https://mockaroo.com/datasets/264642) en la prueba. Se prueban diferentes campos de diferentes longitudes en la descripción de un tag.
 
@@ -69,6 +69,6 @@ Total de pruebas en Kraken: **2**
 
     Para estos escenarios, se ha utilizado faker en todos los campos, ingresando datos totalmente aleatorios según el tipo de campo sin limitar fronteras para crear una publicación
 
-    - **[Publicaciones (publications)](https://github.com/fanpay/tsdc_ghost/blob/main/kraken/4.44.0_data_random/features/1_EDIT_PUBLICATION.feature)** 
+    - **[Publicaciones (publications)](https://github.com/fanpay/tsdc_ghost/blob/main/semana_8/pruebas_validacion_datos/kraken/4.44.0_data_random/features/1_EDIT_PUBLICATION.feature)** 
 
 
