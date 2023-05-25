@@ -11,7 +11,6 @@ Se deben adaptar las nuevas credenciales de autenticación dependiendo del usuar
 
 * Tener instalado [NodeJS 12](https://nodejs.org/en/blog/release/v12.22.12) 
 * Tener instalado [Cypress](https://thesoftwaredesignlab.github.io/AutTestingCodelabs/cypress-tutorial/index.html#0)
-    - Sigue este tutorial para tener más idea sobre esta herramienta -> [Tutorial Cypress](https://thesoftwaredesignlab.github.io/AutTestingCodelabs/kraken-web-testing-tool/index.html#0)
 * Instalar la versión **3.41.1** de Ghost en su máquina local siguiendo este tutorial -> [Tutorial - Ghost](https://thesoftwaredesignlab.github.io/AutTestingCodelabs/ghost-local-deployment/index.html#0)
 * Crear una cuenta de usuario en Ghost (Incluído en el tutorial del anterior punto).
 
