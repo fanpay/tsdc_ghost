@@ -43,4 +43,4 @@ Asegúrate de haber cambiado las siguientes propiedades en el archivo `config.js
 ### Ejemplo
 
 En esta dirección puede ver un ejemplo de lo que arroja el reporta y sus comparaciones
-* https://github.com/fanpay/tsdc_ghost/tree/main/semana_8/pruebas_vrt/report_vrt/E3/results/report.html
+* https://fanpay.github.io/tsdc_ghost/report_vrt/E3/results/report.html
