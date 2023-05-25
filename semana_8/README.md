@@ -61,7 +61,7 @@ Aquí hay algunas características clave de la funcionalidad de "Settings" en GH
 Si hasta ahora se encuentra realizando sus primeros pasos en su sitio o no tiene una publicación que no quiere que el mundo vea todavía porque no está lista para su lanzamiento, puede ocultar su sitio detrás de una frase de contraseña compartida básica. Ghost genera aleatoriamente una breve frase de contraseña que puede compartir con cualquier persona que necesite acceso al sitio mientras trabaja en él. Mientras esta configuración esté habilitada, todas las funciones de optimización del motor de búsqueda se desactivarán para ayudar a mantener su sitio bajo el radar.
 
 
-## Listado de 21 escenarios de pruebas
+## Listado de escenarios de pruebas
 
 | Id | Descripcion | Funcionalidad | Responsable |
 |:--:|:-----------:|:-------------:|:------------:|
