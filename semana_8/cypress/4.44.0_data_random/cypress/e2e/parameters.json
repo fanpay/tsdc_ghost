@@ -1,0 +1,85 @@
+{
+  "host": "http://localhost:3002/ghost/",
+  "host_users": "http://localhost:3002/",
+  "signin": {
+    "user": {
+      "email": "test@test.com",
+      "password": "Testing1234567890."
+    },
+    "selectors": {
+      "email": "input[name='identification']",
+      "password": "input[name='password']",
+      "submit": "button[type='submit']"
+    }
+  },
+  "posts": {
+    "selectors": {
+      "listaPosts": ".posts-list",
+      "listaPostsStatus": ".gh-post-list-status",
+      "editorPane": ".gh-koenig-editor-pane",
+      "botonMas": ".koenig-plus-menu-button",
+      "opcionYouTube": ".middarkgrey[title=YouTube]",
+      "urlInput": "input[placeholder='Paste URL to add embedded content...']",
+      "postTitle": ".gh-editor-title",
+      "videoContainer": ".koenig-card-click-overlay",
+      "settingsButton": "button[title='Settings']",
+      "tagInput": "#tag-input",
+      "tagOption": ".ember-power-select-option",
+      "leaveButton": "button[class='gh-btn gh-btn-red']",
+      "saveViewOption": ".gh-contentfilter-button",
+      "inputNameSaveView": "#view-name",
+      "modalFooter": ".modal-footer",
+      "submitViewButton": ".ember-view",
+      "savedOptionView": "a[title='Custom view']",
+      "deleteViewButton": ".gh-btn-red"
+    },
+    "requests": {
+      "all": "api/v3/admin/posts/",
+      "filterPublished": "?limit=30&page=1&filter=status%3Apublished",
+      "filterDrafs": "?limit=30&page=1&filter=status%3Adraft",
+      "filterSheduled": "?limit=30&page=1&filter=status%3Ascheduled",
+      "filterFeatured": "?limit=30&page=1&filter=status%3A%5Bdraft%2Cscheduled%2Cpublished%5D%2Bfeatured%3Atrue",
+      "filterOldest": "?limit=30&page=1&filter=status%3A%5Bdraft%2Cscheduled%2Cpublished%5D&order=published_at%20asc",
+      "filterNewest": "?limit=30&page=1&filter=status%3A%5Bdraft%2Cscheduled%2Cpublished%5D"
+    }
+  },
+  "pages": {
+    "selectors": {
+      "inputTitle": "textarea.gh-editor-title",
+      "botonMas": ".koenig-plus-menu-button",
+      "editorPane": ".gh-koenig-editor-pane",
+      "returnPages": "a[href='#/pages/']",
+      "leaveButton": "button[class='gh-btn gh-btn-red']",
+      "listaPages": ".gh-list",
+      "inputDescription": ".koenig-editor__editor-wrapper",
+      "settingsButton": "button[title='Settings']",
+      "inputSettingsUrl": "input[name='post-setting-slug']",
+      "inputExerpt": "textarea.post-setting-custom-excerpt",
+      "formGroup": ".form-group",
+      "inputPublishDate": ".gh-date-time-picker-date",
+      "inputPublishTime": ".gh-date-time-picker-time",
+      "buttonPlus": ".koenig-plus-menu-button",
+      "opcionYouTube": ".middarkgrey[title=YouTube]",
+      "urlInput": "input[placeholder='Paste URL to add embedded content...']"
+    },
+    "requests": {
+      "create": "api/admin/pages",
+      "slugs": "api/admin/slugs/post/"
+    },
+    "limits":{
+      "nameTagMax":191,
+      "colorTagMax":6,
+      "descriptionTagMax":500,
+      "titleMax":300,
+      "descriptionMax":5000,
+      "urlMax":200,
+      "exerptMax":300,
+      "canonicalURL":2000
+    },
+    "errors": {
+      "maxlength": "Excerpt cannot be longer than @length characters.",
+      "date": "Invalid date format, must be @format",
+      "time": "Must be in format: @format"
+    }
+  }
+}
