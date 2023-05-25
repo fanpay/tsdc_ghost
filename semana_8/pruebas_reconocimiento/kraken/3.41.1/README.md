@@ -1,6 +1,6 @@
 # RECOMENDACIONES IMPORTANTES
 
-Se deben adaptar las nuevas credenciales de autenticación dependiendo del usuario creado en la instalación de GHOST de su propia máquina. Esto se hace en el archivo [properties](https://github.com/fanpay/tsdc_ghost/blob/main/pruebas_kraken/properties.json) y las variables a editar serían:
+Se deben adaptar las nuevas credenciales de autenticación dependiendo del usuario creado en la instalación de GHOST de su propia máquina. Esto se hace en el archivo [properties](https://github.com/fanpay/tsdc_ghost/blob/main/semana_8/pruebas_reconocimiento/kraken/3.41.1/properties.json) y las variables a editar serían:
 
     "USERNAME": "f.payan@uniandes.edu.co",
     "PASSWORD": "Testing123456789.",
@@ -17,7 +17,7 @@ Se deben adaptar las nuevas credenciales de autenticación dependiendo del usuar
 
 ### Kraken
 
-Para ejecutar los escenarios [mencionados anteriormente](https://github.com/fanpay/tsdc_ghost/blob/main/README.md) se deben seguir los siguientes pasos:
+Para ejecutar los escenarios [mencionados anteriormente](https://github.com/fanpay/tsdc_ghost/blob/main/semana_8/README.md) se deben seguir los siguientes pasos:
 
 > El aplicativo GHOST bajo pruebas debe estar en ejecución. 
 

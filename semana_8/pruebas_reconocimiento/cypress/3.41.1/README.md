@@ -1,6 +1,6 @@
 # RECOMENDACIONES IMPORTANTES
 
-Se deben adaptar las nuevas credenciales de autenticación dependiendo del usuario creado en la instalación de GHOST de su propia máquina. Esto se hace en el archivo de [configuración](https://github.com/fanpay/tsdc_ghost/blob/main/prubas_cypress/cypress.config.js) y las variables a editar serían:
+Se deben adaptar las nuevas credenciales de autenticación dependiendo del usuario creado en la instalación de GHOST de su propia máquina. Esto se hace en el archivo de [configuración](https://github.com/fanpay/tsdc_ghost/tree/main/semana_8/cypress/3.41.1/cypress.config.js) y las variables a editar serían:
 
     email: "user@email.com",
     password: "Qwertyuiop",
@@ -18,11 +18,11 @@ Se deben adaptar las nuevas credenciales de autenticación dependiendo del usuar
 
 ### Cypress
 
-Para ejecutar los escenarios [mencionados anteriormente](https://github.com/fanpay/tsdc_ghost/blob/main/README.md) se deben seguir los siguientes pasos:
+Para ejecutar los escenarios [mencionados anteriormente](https://github.com/fanpay/tsdc_ghost/blob/main/semana_8/README.md) se deben seguir los siguientes pasos:
 
 > El aplicativo GHOST bajo pruebas debe estar en ejecución. 
 
-1. Descargar este repositorio, identifique la carpeta `prubas_cypress`, ingrese y abra el archivo `cypress.config.js` en su editor de texto favorito y configure las variables que tienen por nombre `email` y `password` con los datos del usuario que tiene rol `OWNER` dentro de su aplicativo GHOST y guarde los cambios.
+1. Descargar este repositorio, identifique la carpeta `3.41.1`, ingrese y abra el archivo `cypress.config.js` en su editor de texto favorito y configure las variables que tienen por nombre `email` y `password` con los datos del usuario que tiene rol `OWNER` dentro de su aplicativo GHOST y guarde los cambios.
 2. Abrir una terminal y ejecutar el comando `cypress open` .
 3. Seleccionar la opción `Add proyect` .
 4. En el panel que se despliega dar click para buscar en el explorador de archivos la ubicación donde descargo este repositorio y seleccionar la carpeta `pruebas_cypress`.
