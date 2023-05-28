@@ -1,5 +1,8 @@
 # GHOST v3.41.1
 Repositorio creado para reportar incidencias del proyecto GHOST para The Software Design Company (TSDC)
+# Vídeo de la semana 8
+[Enlace al vídeo sin intro](https://uniandes-my.sharepoint.com/:v:/g/personal/f_payan_uniandes_edu_co/EXxn5rhAcd5AnlDbSSNTO1sBZrjXipj87wRszXRIqjyfbA?e=3Vjm9d)
+[Enlace al vídeo con intro](https://uniandes-my.sharepoint.com/:v:/g/personal/f_payan_uniandes_edu_co/EVG_2VaFyR1Dg1Y9MnSw4p0BVPRVZfuNG_BJOwAALllbSw?e=DuOEJu)
 
 # Vídeo Semana 6
 [Enlace al video](https://youtu.be/dtIm2GfxmG4)
